@@ -1,0 +1,296 @@
+/**
+ * 非常道CSS框架
+ *
+ * @copyright	Copyright (c) 2012 - 2013 icsser Dev Team.
+ * @license		http://icsser.com/user_guide/license.html
+ * @link		http://icsser.com
+ * @since		Version 1.1.2
+ *
+ **/
+
+
+/* 复杂列表 */
+
+/* list-complex-01-FCD-app */
+.list-complex-01-FCD-app{overflow:hidden;}
+.list-complex-01-FCD-app dd{line-height:26px;height:26px;position:relative;overflow:hidden;float:left;width:100%;}
+.list-complex-01-FCD-app dt{border:none;padding:3px 0 8px 110px;position:relative;overflow:hidden;}
+.list-complex-01-FCD-app dt .l-img{width:100px;height:70px;position:relative;margin:0 0 0 -110px;float:left;display:inline;}
+.list-complex-01-FCD-app dt .fir-ico-bg{display:block;border-radius:0;top:-3px;width:21px;height:24px;background:url(../images/pic-01.png);-background:none;-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/pic-01.png");font-size:14px;color:#fff;text-align:center;line-height:16px;font-weight:bold;overflow:hidden;}
+.list-complex-01-FCD-app dt img{width:100%;height:100%;}
+.list-complex-01-FCD-app dt .rig-db{position:relative;}
+.list-complex-01-FCD-app dt p{color:#9e9e9e;line-height:18px;margin:2px 0 5px;text-align:left;padding:0;overflow:hidden;display:block;}
+.list-complex-01-FCD-app dt p a{display:inline;padding:0;line-height:;}
+.list-complex-01-FCD-app dt .play-butt{display:block;width:52px;height:24px;padding:0;background:url(../images/play-butt.png);-background:none;-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/play-butt.png");line-height:22px;text-align:center;color:#fff;}
+.list-complex-01-FCD-app .las{border:none;}
+.list-complex-01-FCD-app i{width:13px;height:13px;border-radius:3px;display:block;color:#fff;line-height:14px;font-style:normal;font-size:12px;text-align:center;position:absolute;top:6px;-top:7px;left:5px;}
+.list-complex-01-FCD-app a{padding:0 25px;font-size:14px;display:block;height:26px;overflow:hidden;color:#dadada;font-size:12px;}
+.list-complex-01-FCD-app a:hover{color:#ec6022;text-decoration:none;}
+.list-complex-01-FCD-app font{color:#9e9e9e;padding-left:10px;font-size:12px;}
+.list-complex-01-FCD-app span{position:absolute;right:5px;top:0;font-size:12px;color:#ec6022;font-family:"Tahoma";}
+.list-complex-01-FCD-app a{color:#333;}
+.list-complex-01-FCD-app span{color:#999;}
+.list-complex-01-FCD-app .oran{color:#ff6600;}
+.list-complex-01-FCD-app .oran b{font-size:16px;}
+.list-complex-01-FCD-app .gray-bg{background:#878787;}
+.list-complex-01-FCD-app .orange-bg{background:#ec6022;}
+/**/
+
+/* list-complex-02-FCD-app */
+.list-complex-02-FCD-app{}
+.list-complex-02-FCD-app li{overflow:hidden;position:relative;overflow:hidden;padding-left:140px;_float:left;}
+.list-complex-02-FCD-app .lef{width:130px;margin-left:-140px;position:relative;z-index:30;margin-top:5px;float:left;/*position:absolute;left:0;top:5px;_margin-left:-140px;*/}
+.list-complex-02-FCD-app .lef .a-img{display:block;width:120px;height:170px;padding:4px;border:1px solid #e2e2e2;background:#fff;}
+.list-complex-02-FCD-app .lef img{width:100%;height:100%;}
+.list-complex-02-FCD-app .rig{overflow:hidden;padding-top:5px;float:left;}
+.list-complex-02-FCD-app .titl a,.list-07 .titl span{font-size:14px;display:block;font-weight:bold;}
+.list-complex-02-FCD-app .titl span{position:absolute;top:0;right:0;font-size:16px;}
+.list-complex-02-FCD-app .d-y span{margin-right:30px;}
+.list-complex-02-FCD-app .d-y font{color:#333;margin-right:7px;font-size:12px;}
+.list-complex-02-FCD-app .z-y font{color:#333;margin-right:7px;font-size:12px;}
+.list-complex-02-FCD-app .rig li{margin-bottom:12px;overflow:hidden;padding:0;width:100%;padding-left:0;}
+.list-complex-02-FCD-app .rig .las{margin:0;}
+.list-complex-02-FCD-app .rig li p{line-height:20px;height:40px;overflow:hidden;padding:0;text-align:left;height:100px;color:#666;}
+.list-complex-02-FCD-app .butt{overflow:hidden;padding-top:5px;overflow:hidden;float:left;margin-right:10px;}
+.list-complex-02-FCD-app .butt span{display:block;height:20px;line-height:21px;float:left;}
+.list-complex-02-FCD-app .butt a{display:block;height:18px;line-height:19px;padding:0 4px;position:relative;width:auto;text-indent:20px;float:left;border:1px solid #d3d3d3;background-position:left -406px;margin-right:5px;overflow:hidden;}
+.list-complex-02-FCD-app .butt a:hover{color:#ec6022;text-decoration:none;}
+.list-complex-02-FCD-app .butt img{display:block;border:none;padding:0;width:15px;height:16px;position:absolute;top:1px;left:4px;}
+/**/
+
+/* list-complex-03-FCD-app */
+.list-complex-03-FCD-app{overflow:hidden;}
+.list-complex-03-FCD-app li{overflow:hidden;padding-left:93px;position:relative;_float:left;}
+.list-complex-03-FCD-app .lef{float:left;z-index:30;margin-left:-93px;position:relative;width:83px;height:82px;display:block;}
+.list-complex-03-FCD-app .lef .a_img{display:block;width:100%;height:100%;}
+.list-complex-03-FCD-app .lef img{width:100%;height:100%;}
+.list-complex-03-FCD-app .rig{overflow:hidden;}
+.list-complex-03-FCD-app .rig h1{margin-bottom:10px;padding:0;}
+.list-complex-03-FCD-app .rig h1 a{font-size:14px;}
+.list-complex-03-FCD-app .rig p{line-height:18px;height:33px;overflow:hidden;margin-bottom:10px;padding:0;color:#666;text-align:left;}
+.list-complex-03-FCD-app .rig p span{color:#666;font-weight:bold;}
+.list-complex-03-FCD-app .rig .fraction{margin-bottom:10px;overflow:hidden;}
+.list-complex-03-FCD-app .rig .fraction span,.list-06 li .rig .fraction a,.list-06 li .rig .fraction font{display:block;float:left;}
+.list-complex-03-FCD-app .rig .fraction a{margin-top:1px;margin-right:15px;float:left;}
+.list-complex-03-FCD-app .rig .fraction font{font-weight:bold;font-size:12px;}
+.list-complex-03-FCD-app .rig .label{height:17px;overflow:hidden;clear:both;}
+.list-complex-03-FCD-app .rig .label span{display:block;float:left;width:38px;height:17px;background-position:left -281px;line-height:19px;text-indent:4px;color:#333;}
+.list-complex-03-FCD-app .rig .label .s-nav{float:left;color:#666;font-size:10px;line-height:19px;}
+.list-complex-03-FCD-app .rig .label .s-nav a{color:#666;padding:0 5px;}
+/**/
+
+/* list-complex-04-FCD-app */
+.list-complex-04-FCD-app{overflow:hidden;padding-bottom:10px;}
+.list-complex-04-FCD-app li{width:220px;overflow:hidden;}
+.list-complex-04-FCD-app .a-img{width:180px;height:250px;border:1px solid #ececec;display:block;position:relative;}
+.list-complex-04-FCD-app .a-img font,.list-complex-04-FCD-app .a-img span{display:block;height:25px;line-height:25px;color:#fff;position:absolute;left:0;top:0;width:100%;}
+.list-complex-04-FCD-app .a-img font{z-index:101;text-align:center;}
+.list-complex-04-FCD-app .a-img span{background:#000;filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity:0.6;opacity:0.6;z-index:100;}
+.list-complex-04-FCD-app .a-img:hover font{color:#a40000;}
+.list-complex-04-FCD-app .a-img:hover span{background:#fff;}
+.list-complex-04-FCD-app img{width:100%;height:100%;}
+.list-complex-04-FCD-app .how-m{overflow:hidden;padding-top:5px;width:100%;}
+.list-complex-04-FCD-app .how-m i{font-style:normal;font-weight:bold;font-size:12px;}
+.list-complex-04-FCD-app .how-m .f-01{display:block;font-size:16px;float:left;line-height:16px;}
+.list-complex-04-FCD-app .how-m span{display:block;float:left;line-height:20px;text-decoration:line-through;}
+.list-complex-04-FCD-app .how-m .f-02{display:block;font-size:12px;float:right;color:#909090;line-height:20px;}
+.list-complex-04-FCD-app .how-m .f-02 b{font-weight:normal;}
+.list-complex-04-FCD-app .a-txt{display:block;height:14px;line-height:14px;width:100%;}
+.list-complex-04-FCD-app p{color:#333;line-height:20px;height:40px;position:relative;overflow:hidden;padding:0;}
+.list-complex-04-FCD-app p span{line-height:20px;color:#bbb;padding-left:10px;}
+.list-complex-04-FCD-app .pic-more{height:34px;overflow:hidden;padding-top:5px;width:100%;}
+.list-complex-04-FCD-app .pic-more-b{height:100%;width:185px;position:relative;padding:0 16px 0 19px;overflow:hidden;}
+.list-complex-04-FCD-app .pic-more-b i{position:absolute;top:10px;position:absolute;cursor:pointer;}
+.list-complex-04-FCD-app .pic-more-b-01{width:240px;padding:0;}
+.list-complex-04-FCD-app .jt-l-r-03{display:block;width:14px;height:14px;background:url(../images/jt-lr-ico-02.gif);overflow:hidden;left:0;}
+.list-complex-04-FCD-app .jt-l-r-04{display:block;width:14px;height:14px;background:url(../images/jt-lr-ico-02.gif) left -14px;overflow:hidden;right:0;}
+.list-complex-04-FCD-app .pic-more a{display:block;float:left;width:30px;height:30px;padding:1px;border:1px solid #ccc;margin-right:3px;}
+.list-complex-04-FCD-app .pic-more img{width:100%;height:100%;}
+.list-complex-04-FCD-app{padding-bottom:20px;}
+.list-complex-04-FCD-app .a-img{width:100%;height:220px;border:none;}
+.list-complex-04-FCD-app img{width:100%;height:100%;}
+.list-complex-04-FCD-app .a-txt{height:18px;margin-bottom:10px;}
+.list-complex-04-FCD-app .a-txt span{display:block;float:left;margin-right:5px;line-height:18px;color:#333;}
+.list-complex-04-FCD-app .a-txt:hover span{color:#D10013;}
+.list-complex-04-FCD-app .a-txt font{float:right;display:block;line-height:18px;}
+.list-complex-04-FCD-app .cha-butt{display:block;line-height:26px;width:118px;height:26px;background:#ffe0a0;border-radius:5px;color:#a40000;text-align:center;}
+.list-complex-04-FCD-app .cha-butt:hover{background:#ff6600;color:#fff;text-decoration:none;}
+/**/
+
+/* list-complex-05 */
+.list-complex-05-FCD-app{width:206px;padding:10px;border:1px solid #efefef;overflow:hidden;margin-bottom:10px;position:relative;background:#fff;}
+.list-complex-05-FCD-app:hover{border:1px solid #D42130;}
+.list-complex-05-FCD-app .a-img{display:block;width:100%;position:relative;cursor:pointer;}
+.list-complex-05-FCD-app .a-img img{width:100%;}
+.list-complex-05-FCD-app .a-img a{display:none;width:71px;height:27px;overflow:hidden;position:absolute;bottom:5px;line-height:29px;text-indent:25px;text-decoration:none;color:#cd000f;}
+.list-complex-05-FCD-app .a-img:hover a{display:block;}
+.list-complex-05-FCD-app .a-img .butt-01{background:url(../images/like-butt.png);-background:none;-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/like-butt.png");left:10px;}
+.list-complex-05-FCD-app .a-img .butt-02{text-indent:30px;background:url(../images/pinglun-butt.png);-background:none;-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/pinglun-butt.png");left:91px;}
+.list-complex-05-FCD-app .a-img .butt-01:hover{background:url(../images/like-butt-down.png);-background:none;-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/like-butt-down.png");}
+.list-complex-05-FCD-app .a-img .butt-02:hover{background:url(../images/pinglun-butt-down.png);-background:none;-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/pinglun-butt-down.png");}
+.list-complex-05-FCD-app .titl{display:block;padding:8px 0 0;margin-bottom:10px;line-height:16px;height:14px;overflow:hidden;color:#333;}
+.list-complex-05-FCD-app .num{height:14px;line-height:16px;overflow:hidden;margin-bottom:10px;}
+.list-complex-05-FCD-app .num span{margin-right:2px;}
+.list-complex-05-FCD-app .num a{margin-right:5px;}
+.list-complex-05-FCD-app .num a:hover{color:#333;text-decoration:none;}
+.list-complex-05-FCD-app .share{padding:10px;background:#f7f7f7;overflow:hidden;-float:left;-width:186px;}
+.list-complex-05-FCD-app .share img{float:left;width:33px;height:33px;}
+.list-complex-05-FCD-app .share p{float:right;width:145px;line-height:16px;}
+.list-complex-05-FCD-app .share p .n-id{font-size:14px;color:#666;font-weight:bold;margin-right:5px;}
+.list-complex-05-FCD-app .share p .sh-text{color:#999;margin-right:5px;}
+.list-complex-05-FCD-app .how-m{overflow:hidden;padding-top:5px;width:100%;}
+.list-complex-05-FCD-app .how-m i{font-style:normal;font-weight:bold;font-size:12px;}
+.list-complex-05-FCD-app .how-m .f-01{display:block;font-size:16px;float:left;line-height:16px;}
+.list-complex-05-FCD-app .how-m span{display:block;float:left;line-height:20px;text-decoration:line-through;}
+.list-complex-05-FCD-app .how-m .f-02{display:block;font-size:12px;float:right;color:#909090;line-height:20px;}
+.list-complex-05-FCD-app .how-m .f-02 b{font-weight:normal;}
+.list-complex-05-FCD-app .share{padding:10px;background:#f7f7f7;overflow:hidden;-float:left;-width:186px;}
+.list-complex-05-FCD-app .share img{float:left;width:33px;height:33px;}
+.list-complex-05-FCD-app .share p{float:right;width:145px;line-height:16px;padding:0;text-align:left;color:#999;}
+.list-complex-05-FCD-app .share p .n-id{font-size:14px;color:#666;font-weight:bold;margin-right:5px;}
+.list-complex-05-FCD-app .share p .sh-text{color:#999;margin-right:5px;}
+/**/
+
+/* list-complex-06 */
+.list-complex-06-FCD-app{overflow:hidden;}
+.list-complex-06-FCD-app a{font-size:14px;}
+.list-complex-06-FCD-app dt{height:65px;margin-left:15px;overflow:hidden;}
+.list-complex-06-FCD-app .dv_db{height:64px;border-bottom:1px dashed #cfcfcf;position:relative;padding-left:144px;}
+.list-complex-06-FCD-app .dv_db div{position:absolute;left:0;top:0;}
+.list-complex-06-FCD-app dt .icon-part-03-FCD-app{float:left;margin:1px 10px 0 0;}
+.list-complex-06-FCD-app .img-a{display:block;width:103px;height:54px;border:1px solid #dbdbdb;float:left;}
+.list-complex-06-FCD-app .img-a img{width:100%;height:100%;}
+.list-complex-06-FCD-app dt p{float:left;font-size:14px;color:#333;font-family:"微软雅黑";text-align:left;padding:0;}
+.list-complex-06-FCD-app dd{height:34px;overflow:hidden;margin-left:15px;position:relative;padding-right:60px;}
+.list-complex-06-FCD-app dd:hover{background:#fffaeb;}
+.list-complex-06-FCD-app dd a{line-height:34px;}
+.list-complex-06-FCD-app .titl-a{display:block;float:left;width:105px;margin-right:15px;}
+.list-complex-06-FCD-app .txt-a{}
+.list-complex-06-FCD-app .look-butt{display:none;width:50px;height:24px;border-radius:5px;background:#a40000;color:#fff;line-height:24px;text-align:center;position:absolute;right:5px;top:6px;}
+.list-complex-06-FCD-app .look-butt:hover{text-decoration:none;}
+.list-complex-06-FCD-app dd:hover .look-butt{display:block;}
+.list-complex-06-FCD-app i{float:left;color:#fff;margin:11px 10px 0 0;}
+.list-complex-06-FCD-app font{font-size:14px;}
+/**/
+
+/* 瀑布流模块样式 */
+.list-complex-07-FCD-app{width:218px;border:1px solid #c9c7c8;background:#fff;overflow:hidden;}
+.list-complex-07-01-FCD-app{background:#f8f3f3;}
+.list-complex-07-FCD-app p{padding:0;text-align:left;}
+.list-complex-07-FCD-app .a-img{margin:14px 0 13px 14px;width:190px;display:block;}
+.list-complex-07-FCD-app .a-img img{width:100%;margin-bottom:1px;}
+.list-complex-07-FCD-app .lable-block{margin:0 0 14px 11px;overflow:hidden;_float:left;_margin-left:7px;}
+.list-complex-07-FCD-app .lable-block a{display:block;width:50px;height:25px;border:1px solid #dedcdd;margin:0 3px 3px 0;border-radius:2px;background:#f2f2f2;float:left;line-height:25px;text-align:center;}
+.list-complex-07-FCD-app .lable-block .a-w{width:78px;}
+.list-complex-07-FCD-app .item-share,.list-complex-07-FCD-app .item-my-atten{width:190px;margin:0 0 14px 14px;overflow:hidden;}
+.list-complex-07-FCD-app .item-share .a-avatar,.list-complex-07-FCD-app .item-reply .a-avatar{display:block;float:left;margin-right:10px;width:30px;height:30px;}
+.list-complex-07-FCD-app .item-share .a-avatar img,.list-complex-07-FCD-app .item-reply .a-avatar img{width:100%;height:100%;}
+.list-complex-07-FCD-app .item-share p,.list-complex-07-FCD-app .item-reply p{float:left;width:150px;padding:0;text-align:left;}
+.list-complex-07-FCD-app .item-share .tree-id{display:block;float:left;margin-right:10px;line-height:30px;}
+.list-complex-07-FCD-app .item-share .atten-butt,.list-complex-07-FCD-app .item-user-inter .atten-butt{display:block;float:right;display:block;width:48px;height:29px;overflow:hidden;text-align:center;line-height:29px;background:url(images/butt-05.gif);}
+.list-complex-07-FCD-app .item-share .share-butt{display:block;float:left;margin-right:10px;width:24px;height:24px;}
+.list-complex-07-FCD-app .item-share .share-butt img{width:100%;height:100%;}
+.list-complex-07-FCD-app .item-share .span-num{display:block;width:62px;border-left:1px solid #f5f2f2;height:50px;line-height:25px;float:left;text-align:center;}
+.list-complex-07-FCD-app .item-share .span-num b{font-size:16px;color:#333;}
+.list-complex-07-FCD-app .item-share .last{border-right:1px solid #f5f2f2;}
+.list-complex-07-FCD-app .item-reply{width:190px;padding:14px;overflow:hidden;background:#f8f8f8;border-top:1px solid #e0dedf;}
+.list-complex-07-FCD-app .item-reply-01{background:#fff;border:none;}
+.list-complex-07-FCD-app .item-reply .go-butt{display:block;width:150px;height:32px;background:url(../images/butt-03-FCD-app.gif);overflow:hidden;float:left;}
+.list-complex-07-FCD-app .item-titl{width:190px;overflow:hidden;margin:14px 0 5px 14px;}
+.list-complex-07-FCD-app .item-titl h1{font-size:16px;overflow:hidden;position:relative;font-weight:normal;padding:0;}
+.list-complex-07-FCD-app .item-titl h2{font-size:16px;overflow:hidden;position:relative;font-weight:normal;color:#999;padding:0;}
+.list-complex-07-FCD-app .item-titl h3{font-size:20px;overflow:hidden;position:relative;font-weight:normal;color:#333;padding:0;}
+.list-complex-07-FCD-app .item-titl-01{margin-bottom:-9px;}
+.list-complex-07-FCD-app .item-titl h1 font,.list-complex-07-FCD-app .item-titl h1 span{bottom:0;right:0;font-size:14px;position:absolute;}
+.list-complex-07-FCD-app .item-titl font{font-size:14px;color:#333;}
+.list-complex-07-FCD-app .item-pic-part{width:195px;overflow:hidden;margin:0 0 9px 14px;}
+.list-complex-07-FCD-app .item-pic-part a{display:block;width:60px;height:60px;float:left;margin:0 5px 5px 0;}
+.list-complex-07-FCD-app .item-pic-part img{width:100%;height:100%;}
+.list-complex-07-FCD-app .item-header{width:100%;height:32px;background:#fdfaf9;}
+.list-complex-07-FCD-app .item-header h1{height:100%;float:left;padding:0;padding-left:14px;font-size:14px;line-height:32px;color:#666;}
+.list-complex-07-FCD-app .item-header .rig{float:right;margin:13px 9px 0 0;}
+.list-complex-07-FCD-app .item-header .rig a{float:left;margin-right:5px;}
+.list-complex-07-FCD-app .item-user-inter{width:190px;margin:14px 0 14px 14px;overflow:hidden;}
+.list-complex-07-FCD-app .item-user-inter .a-avatar{display:block;width:75px;height:75px;overflow:hidden;float:left;margin-right:10px;}
+.list-complex-07-FCD-app .item-user-inter .a-avatar img{width:100%;height:100%;}
+.list-complex-07-FCD-app .item-user-inter p{float:left;width:105px;margin-bottom:3px;line-height:20px;color:#999;}
+.list-complex-07-FCD-app .item-user-inter p b{font-size:14px;color:#333;}
+.list-complex-07-FCD-app .item-user-inter p font{font-size:16px;}
+.list-complex-07-FCD-app .item-user-inter p em{font-style:normal;font-weight:bold;}
+.list-complex-07-FCD-app .item-user-inter p img{margin-right:3px;}
+.list-complex-07-FCD-app .item-user-inter p a{font-size:14px;}
+.list-complex-07-FCD-app .item-user-inter .atten-butt{float:left;}
+.list-complex-07-FCD-app .atten-part-butt{display:block;width:190px;height:29px;background:url(images/butt-07.gif);text-align:center;line-height:29px;font-size:14px;}
+.list-complex-07-FCD-app .atten-part-butt-01{background:url(images/butt-11.gif);color:#fff;height:32px;line-height:32px;}
+.list-complex-07-FCD-app .atten-part-butt-01:hover{color:#fff;}
+.list-complex-07-FCD-app .item-atten-body{width:195px;overflow:hidden;margin:0 0 9px 14px;}
+.list-complex-07-FCD-app .item-atten-body a{display:block;float:left;margin:0 5px 5px 0;width:34px;height:34px;}
+.list-complex-07-FCD-app .item-atten-body img{width:100%;height:100%;}
+.list-complex-07-FCD-app .item-atten-body .etc-album{width:178px;height:30px;background:#f9f9f9;border:1px solid #ddd;line-height:30px;padding-left:10px;position:relative;color:#999;}
+.list-complex-07-FCD-app .item-atten-body span{display:block;position:absolute;height:28px;width:37px;border-left:1px solid #ddd;right:0;top:1px;text-align:center;}
+.list-complex-07-FCD-app .item-my-atten p{padding-top:14px;}
+.list-complex-07-FCD-app .item-s-nav{height:40px;width:219px;margin-bottom:-14px;}
+.list-complex-07-FCD-app .item-s-nav a{float:left;display:block;width:72px;height:100%;border-right:1px solid #dedcdd;line-height:40px;position:relative;text-indent:30px;}
+.list-complex-07-FCD-app .item-s-nav i{position:absolute;left:10px;top:13px;}
+.list-complex-07-FCD-app .item-s-nav .nav-rig{float:right;}
+.list-complex-07-FCD-app .item-s-nav .nav-rig a{float:left;border:none;text-indent:0;text-align:center;}
+.list-complex-07-FCD-app .item-list-ul{padding:14px;width:190px;background:#fafafa;overflow:hidden;}
+.list-complex-07-FCD-app .item-list-ul li{height:25px;line-height:25px;position:relative;}
+.list-complex-07-FCD-app .item-list-ul a{position:relative;padding-left:10px;}
+.list-complex-07-FCD-app .item-list-ul i{position:absolute;left:0;top:5px;}
+.list-complex-07-FCD-app .item-list-ul .setup-butt{display:block;width:73px;height:25px;overflow:hidden;position:absolute;right:0;top:0;padding:0;background:url(images/butt-13.gif);text-align:center;color:#fff;line-height:25px;}
+.list-complex-07-FCD-app .jt-right-01{width:0;height:0;overflow:hidden;border-width:4px 0 4px 4px;border-style:solid;border-color:#fafafa #fafafa #fafafa #ff6600;overflow:hidden;display:block;}
+.list-complex-07-FCD-app .this-line-01{height:1px;overflow:hidden;background:#e6e1e1;width:100%;border-bottom:1px solid #fff;}
+/**/
+
+/* list-complex-08 */
+.list-complex-08-FCD-app{overflow:hidden;margin:0 auto;padding-left:1px;margin:0 15px;}
+.list-complex-08-FCD-app li{width:188px;border:1px solid #e6e6e6;border-bottom:3px solid #e6e6e6;height:295px;float:left;margin-left:-1px;background:#fff;position:relative;z-index:100;}
+.list-complex-08-FCD-app .liover{border-color:#cc763c;z-index:150;}
+.list-complex-08-FCD-app .a_img{width:150px;height:150px;display:block;margin:15px auto;}
+.list-complex-08-FCD-app .a_img img{width:100%;height:100%;}
+.list-complex-08-FCD-app p{margin:0 15px 10px;color:#333;line-height:16px;height:32px;overflow:hidden;padding:0;}
+.list-complex-08-FCD-app .integ{width:163px;height:60px;margin:0 auto;}
+.list-complex-08-FCD-app .integ p{line-height:17px;height:auto;}
+.list-complex-08-FCD-app .integ .lef{width:80px;height:58px;border:1px solid #cc763c;border-right:1px solid #c5c5c5;float:left;}
+.list-complex-08-FCD-app .integ .lef font{color:#fe6700;}
+.list-complex-08-FCD-app .integ .lef font b{font-size:14px;font-weight:normal;margin-right:3px;}
+.list-complex-08-FCD-app .integ .lef a{color:#fff;background:#cc763c;padding:0 5px;}
+.list-complex-08-FCD-app .integ .rig{width:80px;height:58px;border:1px solid #4c6bc0;border-left:none;float:left;}
+.list-complex-08-FCD-app .integ .rig font{color:#4c6bc0;}
+.list-complex-08-FCD-app .integ .rig font b{font-size:14px;font-weight:normal;margin-right:3px;}
+.list-complex-08-FCD-app .integ .rig a{color:#fff;background:#4c6bc0;padding:0 5px;}
+.list-complex-08-FCD-app .liover .lef{background:#cc763c;}
+.list-complex-08-FCD-app .liover .integ p,.list-complex-08-FCD-app .liover .integ font{color:#fff;}
+.list-complex-08-FCD-app .liover .rig{background:#4c6bc0;}
+.list-complex-08-FCD-app .integ p{margin:2px 3px 0 5px;}
+/**/
+
+/* list-complex-09-FCD-app-FCD-app */
+.list-complex-09-FCD-app{margin-right:-33px;overflow:hidden;}
+.list-complex-09-FCD-app li{width:220px;float:left;padding:15px 33px 10px 0;border-bottom:1px dashed #d3d3d3;}
+.list-complex-09-FCD-app .a-img{display:block;width:218px;height:218px;border:1px solid #f7f7f7;margin-bottom:5px;}
+.list-complex-09-FCD-app .a-img:hover{border:1px solid #890000;}
+.list-complex-09-FCD-app .a-img img{width:100%;height:100%;}
+.list-complex-09-FCD-app .a-txt{height:28px;line-height:14px;display:block;overflow:hidden;margin-bottom:5px;}
+.list-complex-09-FCD-app .text-db{margin-bottom:3px;padding:0 1px;}
+.list-complex-09-FCD-app .text-db b{font-size:22px;color:#666;font-family:"微软雅黑";font-weight:normal;margin-right:5px;}
+.list-complex-09-FCD-app .text-db font{margin-right:10px;}
+.list-complex-09-FCD-app .text-db span{color:#aaa;margin-right:5px;}
+.list-complex-09-FCD-app .text-db .del_span{text-decoration:line-through;}
+.list-complex-09-FCD-app .text-db a{margin-right:20px;color:#666;}
+.list-complex-09-FCD-app .text-db a:hover{color:#890000;}
+.list-complex-09-FCD-app .text-db a font{color:#890000;margin:0;}
+.list-complex-09-FCD-app .text-db img{float:left;margin-right:5px;}
+/**/
+
+/* list-complex-10-FCD-app-FCD-app */
+.list-complex-10-FCD-app{padding:10px 15px 10px 145px;}
+.list-complex-10-FCD-app li{height:25px;line-height:25px;padding-left:10px;overflow:hidden;}
+.list-complex-10-FCD-app .fir{float:left;margin-left:-130px;margin-top:5px;width:130px;height:auto;padding:0;display:inline;}
+.list-complex-10-FCD-app .fir .a-img{display:block;width:130px;}
+.list-complex-10-FCD-app .fir .a-img img{width:100%;margin-bottom:4px;}
+.list-complex-10-FCD-app .fir p{height:25px;line-height:25px;color:#333;overflow:hidden;}
+/**/
+
+/**/

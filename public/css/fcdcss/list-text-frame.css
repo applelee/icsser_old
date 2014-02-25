@@ -1,0 +1,190 @@
+/**
+ * 非常道CSS框架
+ *
+ * @copyright	Copyright (c) 2012 - 2013 icsser Dev Team.
+ * @license		http://icsser.com/user_guide/license.html
+ * @link		http://icsser.com
+ * @since		Version 1.1.2
+ *
+ **/
+ 
+
+/* 文字列表 */
+
+/* list-text-01-FCD-app*/
+.list-text-01-FCD-app{overflow:hidden;}
+.list-text-01-FCD-app li{height:28px;padding-left:18px;line-height:28px;overflow:hidden;position:relative;}
+.list-text-01-FCD-app a{position:relative;line-height:28px;font-size:14px;}
+.list-text-01-FCD-app a:hover{color:#000;text-decoration:underline;}
+.list-text-01-FCD-app i{position:absolute;left:0;top:9px;}
+.list-text-01-FCD-app .film-ico{display:block;width:12px;height:11px;overflow:hidden;background:url(../images/ico-02.gif);}
+/**/
+
+/* list-text-02-FCD-app */
+.list-text-02-FCD-app{overflow:hidden;}
+.list-text-02-FCD-app li{overflow:hidden;clear:both;}
+.list-text-02-FCD-app a,.list-text-02-FCD-app span{display:block;white-space:nowrap;height:22px;line-height:22px;padding:0 5px;float:left;}
+.list-text-02-FCD-app span{font-weight:bold;font-size:12px;font-family:"微软雅黑";color:#999;}
+.list-text-02-FCD-app li a:hover{color:#000;text-decoration:underline;}
+/**/
+
+/* list-text-03-FCD-app */
+.list-text-03-FCD-app{overflow:hidden;}
+.list-text-03-FCD-app dt{height:31px;background:#6e6e6e;width:100%;}
+.list-text-03-FCD-app h1{line-height:31px;font-size:14px;color:#fff;text-indent:1em;padding:0;}
+.list-text-03-FCD-app dd{overflow:hidden;border-bottom:1px solid #e6e6e6;width:100%;position:relative;}
+.list-text-03-FCD-app dd:hover{background:#f1f1f1;}
+.list-text-03-FCD-app .down{background:#f1f1f1;}
+.list-text-03-FCD-app .down div span{display:none;background:#;}
+.list-text-03-FCD-app font{font-size:12px;}
+.list-text-03-FCD-app a{display:block;float:left;color:#333;font-weight:bold;line-height:31px;text-indent:1em;}
+.list-text-03-FCD-app .r-link{color:#adacac;float:right;position:absolute;right:10px;top:0;}
+.list-text-03-FCD-app .r-link a{text-indent:0;width:48px;text-align:center;}
+.list-text-03-FCD-app .r-link a,.list-text-03-FCD-app .r-link span{font-weight:normal;color:#adacac;line-height:31px;}
+.list-text-03-FCD-app .r-link span{line-height:33px;font-family:"微软雅黑";}
+.list-text-03-FCD-app .las,.list-text-03-FCD-app .las:hover{background:#ffde9f;}
+.list-text-03-FCD-app font{font-weight:bold;line-height:31px;text-indent:20px;display:block;color:#a40000;}
+.list-text-03-FCD-app .las-01{border-bottom:none;}
+.list-text-03-FCD-app ul{width:100%;border-top:1px solid #e6e6e6;overflow:hidden;}
+.list-text-03-FCD-app ul li{width:100%;height:26px;position:relative;float:left;}
+.list-text-03-FCD-app ul a{width:100%;height:100%;background:#fff;font-weight:normal;text-indent:22px;line-height:26px;}
+.list-text-03-FCD-app ul a:hover{color:#d10013;}
+.list-text-03-FCD-app ul a b{color:#999;font-weight:normal;}
+.list-text-03-FCD-app ul a:hover{background:#f1f1f1;}
+.list-text-03-FCD-app ul span{position:absolute;top:7px;right:14px;}
+/**/
+
+/* list-text-04-FCD-app */
+.list-text-04-FCD-app{}
+.list-text-04-FCD-app dt{overflow:hidden;margin-bottom:5px;}
+.list-text-04-FCD-app h1{width:85px;height:25px;background:#fff1f8;border:1px solid #d6468c;color:#d6468c;font-size:14px;font-weight:normal;line-height:25px;text-align:center;border-radius:3px;margin-left:14px;padding:0;}
+.list-text-04-FCD-app dd{overflow:hidden;}
+.list-text-04-FCD-app a{display:block;float:left;width:54px;line-height:25px;text-indent:15px;}
+/**/
+
+/* list-text-05-FCD-app */
+.list-text-05-FCD-app{overflow:hidden;}
+.list-text-05-FCD-app li{overflow:hidden;border-bottom:1px dotted #d0d0d0;padding:0 0 10px 69px;margin-bottom:10px;_float:left;}
+.list-text-05-FCD-app a{display:block;float:left;}
+.list-text-05-FCD-app .nav-a{width:56px;height:30px;background:#eee;float:left;border:1px solid #d4d4d4;border-radius:5px;line-height:30px;text-align:center;font-size:14px;color:#666;margin-left:-69px;_margin-left:-34px;position:relative;z-index:30;}
+.list-text-05-FCD-app div{height:32px;overflow:hidden;}
+.list-text-05-FCD-app div a{color:#666;white-space:nowrap;line-height:17px;}
+/**/
+
+/* list-text-06-FCD-app */
+.list-text-06-FCD-app{overflow:hidden;padding-left:50px;}
+.list-text-06-FCD-app dt{font-weight:normal;color:#6e6e6e;width:50px;line-height:20px;padding:3px 0;float:left;font-size:12px;margin-left:-50px;position:relative;z-index:30;}
+.list-text-06-FCD-app dd{float:left;padding:3px 25px 3px 0;position:relative;}
+.list-text-06-FCD-app a{white-space:nowrap;overflow:hidden;padding:0 5px;display:block;line-height:25px;margin-right:20px;color:#0169a8;line-height:20px;height:20px;white-space:nowrap;display:block;float:left;}
+.list-text-06-FCD-app .line-03{display:inline-block;margin:7px 5px 5px;isplay:block;width:1px;height:10px;overflow:hidden;background:#999;overflow:hidden;float:none;}
+.list-text-06-FCD-app font{color:#aeaeae;}
+.list-text-06-FCD-app span{display:block;background:#a40000;color:#fff;float:left;margin-right:20px;padding:0 5px;line-height:20px;height:20px;}
+.list-text-06-FCD-app .more{margin:0;position:absolute;right:0;top:4px;color:#333;}
+/**/
+
+/* list-text-07-FCD-app */
+.list-text-07-FCD-app{background:#e8e8e8;width:100%;}
+.list-text-07-FCD-app td,.tab_01 th{height:30px;background:#fff;text-indent:15px;font-size:12px;color:#666;}
+.list-text-07-FCD-app thead td,.list-text-07-FCD-app thead th{height:33px;font-weight:bold;background-color:#f4f4f4;background-image:-moz-linear-gradient(center top,#fff,#f4f4f4);background-image:-webkit-linear-gradient(center top,#fff,#f4f4f4);background-image:-o-linear-gradient(center top,#fff,#f4f4f4);background-image:-ms-linear-gradient(center top,#fff,#f4f4f4);background-image:linear-gradient(center top,#fff,#f4f4f4);}
+.list-text-07-FCD-app th{text-indent:0;text-align:center;}
+.list-text-07-FCD-app img{width:115px;height:45px;margin:10px 0;}
+.list-text-07-FCD-app tr:hover td{background-color:#fffdf0;}
+.list-text-07-FCD-app thead tr:hover td{background-color:none;}
+.list-text-07-FCD-app .tbod td{font-weight:bold;}
+/**/
+
+/* list-text-08-FCD-app */
+.list-text-08-FCD-app{overflow:hidden;border-bottom:1px solid #e8e8e8;overflow:hidden;_width:100%;_float:left;position:relative;}
+.list-text-08-fir-FCD-app{border-top:1px solid #e8e8e8;}
+.list-text-08-FCD-app dt{height:38px;border-bottom:1px solid #e8e8e8;_width:100%;_float:left;background-color:#f4f4f4;background-image:-moz-linear-gradient(center top,#fff,#f4f4f4);background-image:-webkit-linear-gradient(center top,#fff,#f4f4f4);background-image:-o-linear-gradient(center top,#fff,#f4f4f4);background-image:-ms-linear-gradient(center top,#fff,#f4f4f4);background-image:linear-gradient(center top,#fff,#f4f4f4);}
+.list-text-08-FCD-app a{display:block;font-size:16px;font-family:"微软雅黑";text-indent:35px;color:#878787;position:relative;}
+.list-text-08-FCD-app .down{color:#77abe2;}
+.list-text-08-FCD-app dt a{line-height:38px;height:38px;}
+.list-text-08-FCD-app dt a:hover{text-decoration:none;}
+.list-text-08-FCD-app dd{_width:158px;_float:left;}
+.list-text-08-FCD-app dd a{font-size:14px;color:#666;height:32px;line-height:32px;text-indent:28px;margin:0 7px;border-bottom:1px dashed #f0f0f0;}
+.list-text-08-FCD-app dd a:hover{color:#77abe2;}
+.list-text-08-FCD-app dd .las{border:none;}
+.list-text-08-FCD-app .icon-part-04-FCD-app{position:absolute;left:15px;top:11px;}
+/**/
+
+/* list-text-09-FCD-app */
+.list-text-09-FCD-app{width:122px;border-right:1px solid #f5e4ca;height:100%;}
+.list-text-09-FCD-app li{width:100%;}
+.list-text-09-FCD-app a{display:block;position:relative;height:31px;line-height:30px;color:#525252;border-bottom:1px solid #fff;font-family:"微软雅黑";font-size:14px;padding-left:15px;background:#fff5ea;}
+.list-text-09-FCD-app .down{color:#fff;}
+.list-text-09-FCD-app .down b{display:block;}
+.list-text-09-FCD-app .down_01{background:#9844a2;}
+.list-text-09-FCD-app .down_02{background:#d6468c;}
+.list-text-09-FCD-app .down_03{background:#db7b2e;}
+.list-text-09-FCD-app .down_04{background:#dc913e;}
+.list-text-09-FCD-app .down_05{background:#ddbb26;}
+.list-text-09-FCD-app .down_06{background:#8ab62b;}
+.list-text-09-FCD-app .down_07{background:#2eb8c5;}
+.list-text-09-FCD-app .down_08{background:#29a59d;}
+.list-text-09-FCD-app .down_09{background:#3f80da;}
+.list-text-09-FCD-app .down_10{background:#7086db;}
+.list-text-09-FCD-app .las a{border:none;}
+.list-text-09-FCD-app .color_block{width:6px;height:100%;position:absolute;left:0;top:0;}
+.list-text-09-FCD-app .color_block_01{background:#9844a2;}
+.list-text-09-FCD-app .color_block_02{background:#d6468c;}
+.list-text-09-FCD-app .color_block_03{background:#db7b2e;}
+.list-text-09-FCD-app .color_block_04{background:#dc913e;}
+.list-text-09-FCD-app .color_block_05{background:#ddbb26;}
+.list-text-09-FCD-app .color_block_06{background:#8ab62b;}
+.list-text-09-FCD-app .color_block_07{background:#2eb8c5;}
+.list-text-09-FCD-app .color_block_08{background:#29a59d;}
+.list-text-09-FCD-app .color_block_09{background:#3f80da;}
+.list-text-09-FCD-app .color_block_10{background:#7086db;}
+.list-text-09-FCD-app .jt-right-01-FCD-app{display:none;position:absolute;right:-4px;_right:-4px;top:12px;}
+.list-text-09-FCD-app .down .jt-right-01-FCD-app{display:block;}
+.list-text-09-FCD-app .icon-part-08-FCD-app{float:left;margin:7px 13px 0 0;}
+/**/
+
+/* list-text-10-FCD-app */
+.list-text-10-FCD-app{height:100%;}
+.list-text-10-FCD-app dt,.list-text-10-FCD-app dd{height:39px;overflow:hidden;position:relative;background:#2c2c2c;padding-left:50px;}
+.list-text-10-FCD-app dd{background:#373737;}
+.list-text-10-FCD-app dt:hover,.list-text-10-FCD-app dd:hover,.list-text-10-FCD-app .down{background:#565656;}
+.list-text-10-FCD-app a{color:#ccc;display:block;line-height:39px;float:left;}
+.list-text-10-FCD-app .fir{font-size:14px;margin-right:20px;color:#fff;}
+.list-text-10-FCD-app .jt-right-01-11-FCD-app{position:absolute;right:10px;top:16px;}
+.list-text-10-FCD-app dt .jt-right-01-11-FCD-app{border:4px solid #2c2c2c;border-right:none;border-left:4px solid #787878;}
+.list-text-10-FCD-app dd .jt-right-01-11-FCD-app{border:4px solid #373737;border-right:none;border-left:4px solid #787878;}
+.list-text-10-FCD-app dt:hover .jt-right-01-11-FCD-app,.list-text-10-FCD-app dd:hover .jt-right-01-11-FCD-app{border:4px solid #565656;border-right:none;border-left:4px solid #787878;}
+.list-text-10-FCD-app .down .jt-right-01-11-FCD-app{border:4px solid #565656;border-right:none;border-left:4px solid #787878;}
+/**/
+
+/* list-text-11-FCD-app */
+.list-text-11-FCD-app{width:100%;}
+.list-text-11-FCD-app li{width:195px;height:35px;}
+.list-text-11-FCD-app li a{width:100%;display:block;height:100%;display:block;position:relative;}
+.list-text-11-FCD-app li span{display:block;position:relative;height:100%;font-size:14px;color:#333;line-height:35px;width:175px;border-bottom:1px dotted #ebebeb;float:right;text-indent:25px;}
+.list-text-11-FCD-app li a:hover span,.list-text-11-FCD-app li .down span{color:#ff7000;border-top:1px solid #ebebeb;border-bottom:1px solid #ebebeb;height:34px;line-height:33px;border-right:3px solid #ff6c00;width:192px;background:#fff;text-indent:45px;}
+.list-text-11-FCD-app li i{position:absolute;left:0;top:9px;}
+.list-text-11-FCD-app .tishi_num_ico{display:block;overflow:hidden;width:17px;height:18px;font-size:10;font-family:"微软雅黑";text-align:center;line-height:14px;font-style:normal;color:#fff;background:url(../images/tishi_num_ico.gif);left:110px;position:absolute;top:8px;font-weight:normal;font-weight:normal}
+.list-text-11-FCD-app li a:hover i,.list-text-11-FCD-app li .down i{left:20px;top:8px;}
+/**/
+
+/* list-text-12-FCD-app */
+.list-text-12-FCD-app{padding:5px 0;}
+.list-text-12-FCD-app li{width:100%;border:1px solid #F7FBFF;border-width:1px 0;overflow:hidden;float:left;}
+.list-text-12-FCD-app li:hover{border:1px solid #cfe4f7;border-width:1px 0;background:#fff;}
+.list-text-12-FCD-app a{border-width:1px 0;display:inline-block;}
+.list-text-12-FCD-app .lef i{position:absolute;left:8px;top:8px;}
+.list-text-12-FCD-app .lef{float:left;padding-left:30px;height:100%;color:#333;line-height:33px;font-size:12px;position:relative;}
+.list-text-12-FCD-app .rig{height:100%;width:100px;float:right;}
+.list-text-12-FCD-app .rig a{display:block;float:right;height:100%;line-height:33px;color:#999;font-size:12px;padding:0 10px 0 0;}
+/**/
+
+
+/* list-text-01-FCD-bird */
+.list-text-01-FCD-bird{overflow:hidden;}
+.list-text-01-FCD-bird li{padding:0 70px 0 12px;height:28px;line-height:28px;position:relative;overflow:hidden;}
+.list-text-01-FCD-bird li i{position:absolute;left:0;top:11px;}
+.list-text-01-FCD-bird li a{font-size:12px;text-decoration:none;text-decoration:underline;color:#44b5df;text-decoration:none;}
+.list-text-01-FCD-bird li a:hover{color:#333;text-decoration:underline;}
+.list-text-01-FCD-bird span{color:#999;margin-left:18px;display:block;position:absolute;right:0;top:0;line-height:28px;width:70px;text-align:right;}
+/**/
+
+/**/
