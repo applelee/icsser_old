@@ -1,0 +1,87 @@
+/**
+ * 非常道CSS框架
+ *
+ * @copyright	Copyright (c) 2012 - 2013 icsser Dev Team.
+ * @license		http://icsser.com/user_guide/license.html
+ * @link		http://icsser.com
+ * @since		Version 1.1.2
+ *
+ **/
+ 
+ 
+/* 按钮基类 */
+ 
+/* 01 */.btn-FCD-app{color:#fff;text-align:center;display:block;cursor:pointer;position:relative;-moz-transition:background 0.5s ease 0s;-webkit-transition:background 0.5s ease 0s;-o-transition:background 0.5s ease 0s;-ms-transition:background 0.5s ease 0s;transition:background 0.5s ease 0s;}
+.btn-FCD-app input{width:100%;height:100%;position:absolute;background:none;cursor:pointer;left:0;top:0;}
+
+/**/
+
+
+/* 按钮规格与方圆 */
+
+/* 方-小 */.btn-cube-01-FCD-app{padding:0 15px;height:24px;line-height:24px;font-size:12px;}
+
+/* 方-中 */.btn-cube-02-FCD-app{padding:0 25px;height:36px;line-height:36px;font-size:16px;}
+
+/* 方-大 */.btn-cube-03-FCD-app{padding:0 35px;height:48px;line-height:48px;font-size:18px;}
+
+/* 圆-小 */.btn-radius-01-FCD-app{padding:0 15px;height:24px;line-height:24px;font-size:12px;border-radius:20px;}
+
+/* 圆-中 */.btn-radius-02-FCD-app{padding:0 25px;height:36px;line-height:36px;font-size:16px;border-radius:30px;}
+
+/* 圆-大 */.btn-radius-03-FCD-app{padding:0 35px;height:48px;line-height:48px;font-size:18px;border-radius:40px;}
+
+/* 圆-小 */.btn-radius-04-FCD-app{padding:0 15px;height:24px;line-height:24px;font-size:12px;border-radius:240px 240px 40px 40px/60px 60px 20px 20px}
+
+/* 圆-中 */.btn-radius-05-FCD-app{padding:0 25px;height:36px;line-height:36px;font-size:16px;border-radius:0 0 100px 100px/0 0 20px 20px;}
+
+/* 圆-大 */.btn-radius-06-FCD-app{padding:0 35px;height:48px;line-height:48px;font-size:18px;border-radius:0 0 60px 60px/0 0 160px 160px;}
+
+/* 方圆-小 */.btn-radius-07-FCD-app{padding:0 15px;height:24px;line-height:24px;font-size:12px;border-radius:0 20px 20px 20px;}
+
+/* 方圆-中 */.btn-radius-08-FCD-app{padding:0 25px;height:36px;line-height:36px;font-size:16px;border-radius:30px 60px 30px 60px / 40px 60px 40px 60px}
+
+/* 方圆-大 */.btn-radius-09-FCD-app{padding:0 35px;height:48px;line-height:48px;font-size:18px;border-radius:0 20px 0 20px;}
+
+/* 圆-小 */.btn-radius-10-FCD-app{padding:0 15px;height:24px;line-height:24px;font-size:12px;border-radius:5px;box-shadow: inset 0 1px 0 0 #f2f2f2;}
+
+/* 圆-中 */.btn-radius-11-FCD-app{padding:0 25px;height:36px;line-height:36px;font-size:16px;border-radius:80px/160px;box-shadow: inset 0 1px 0 0 #f2f2f2;}
+
+/* 圆-大 */.btn-radius-12-FCD-app{padding:0 35px;height:48px;line-height:48px;font-size:18px;border-radius:260px/80px;box-shadow: inset 0 1px 0 0 #f2f2f2;}
+
+/**/
+
+
+/* 颜色风格 */
+
+/* 灰-01 */.bgcolor-gray-01-FCD-app{background:#bbb;}
+.bgcolor-gray-01-FCD-app:hover,.bgcolor-gray-01-current-FCD-app{background:#999;}
+
+/* 灰-02 */.bgcolor-gray-02-FCD-app{background:#E3E3E3;color:#333;border:1px solid #999;box-shadow: 0 0 1px 1px #F6F6F6 inset;text-shadow: 0 1px 0 #FFFFFF;}
+.bgcolor-gray-02-FCD-app:hover,.bgcolor-gray-02-current-FCD-app{background:#d9d9d9;border:1px solid #bbb;}
+
+/* 红-01 */.bgcolor-red-01-FCD-app{background:#f48f8f;}
+.bgcolor-red-01-FCD-app:hover,.bgcolor-red-01-current-FCD-app{background:#f35b5a;}
+
+/* 红-02 */.bgcolor-red-02-FCD-app{background:#ee432e;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ee432e), color-stop(50%, #c63929), color-stop(50%, #b51700), color-stop(100%, #891100));background-image: -webkit-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);background-image: -moz-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);background-image: -ms-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);background-image: -o-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);background-image: linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);border: 1px solid #951100;box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 2px #999;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);}
+.bgcolor-red-02-FCD-app:hover,.bgcolor-red-02-current-FCD-app{background:#f37873;background-image: -webkit-gradient(linear, left top, left bottom,color-stop(0%, #f37873), color-stop(50%, #db504d), color-stop(50%, #cb0500), color-stop(100%, #a20601));background-image: -webkit-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);background-image: -moz-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);background-image: -ms-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);background-image: -o-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);background-image: linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);}
+
+/* 绿-01 */.bgcolor-green-01-FCD-app{background:#86c983;}
+.bgcolor-green-01-FCD-app:hover,.bgcolor-green-01-current-FCD-app{background:#66af62;}
+
+/* 绿-02 */.bgcolor-green-02-FCD-app{background:#7fbf4d;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);background-image: linear-gradient(top, #7fbf4d, #63a62f);border: 1px solid #63a62f;border-bottom: 1px solid #5b992b;text-shadow: 0 -1px 0 #4c9021;}
+.bgcolor-green-02-FCD-app:hover,.bgcolor-green-02-current-FCD-app{background:#76b347;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);background-image: -o-linear-gradient(top, #76b347, #5e9e2e);background-image: linear-gradient(top, #76b347, #5e9e2e);box-shadow: inset 0 1px 0 0 #8dbf67;}
+
+/* 蓝-01 */.bgcolor-blue-01-FCD-app{background:#88b0e2;}
+.bgcolor-blue-01-FCD-app:hover,.bgcolor-blue-01-current-FCD-app{background:#5f94d6;}
+
+/* 蓝-02 */.bgcolor-blue-02-FCD-app{background:#d7e5f5;color:#1a3e66;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d7e5f5), color-stop(100%, #cbe0f5));background-image: -webkit-linear-gradient(top, #d7e5f5, #cbe0f5);background-image: -moz-linear-gradient(top, #d7e5f5, #cbe0f5);background-image: -ms-linear-gradient(top, #d7e5f5, #cbe0f5);background-image: -o-linear-gradient(top, #d7e5f5, #cbe0f5);background-image: linear-gradient(top, #d7e5f5, #cbe0f5);border-top: 1px solid #abbbcc;border-left: 1px solid #a7b6c7;border-bottom: 1px solid #a1afbf;border-right: 1px solid #a7b6c7;box-shadow: inset 0 1px 0 white;text-shadow: 0 1px 1px #fff;}
+.bgcolor-blue-02-FCD-app:hover,.bgcolor-blue-02-current-FCD-app{background:#ccd9e8;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ccd9e8), color-stop(100%, #c1d4e8));background-image: -webkit-linear-gradient(top, #ccd9e8, #c1d4e8);background-image: -moz-linear-gradient(top, #ccd9e8, #c1d4e8);background-image: -ms-linear-gradient(top, #ccd9e8, #c1d4e8);background-image: -o-linear-gradient(top, #ccd9e8, #c1d4e8);background-image: linear-gradient(top, #ccd9e8, #c1d4e8);border-top: 1px solid #a1afbf;border-left: 1px solid #9caaba;border-bottom: 1px solid #96a3b3;border-right: 1px solid #9caaba;box-shadow: inset 0 1px 0 0 #f2f2f2;color: #163659;}
+
+/* 紫-01 */.bgcolor-purple-01-FCD-app{background:#9887ca;}
+.bgcolor-purple-01-FCD-app:hover,.bgcolor-purple-01-current-FCD-app{background:#775fbb;}
+
+/* 紫-02 */.bgcolor-purple-02-FCD-app{background:#9e76e8;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9e76e8), color-stop(50%, #7038e0), color-stop(50%, #6021de), color-stop(100%, #6224de));background-image: -webkit-linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%);background-image: -moz-linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%);background-image: -ms-linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%);background-image: -o-linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%);background-image: linear-gradient(top, #9e76e8 0%, #7038e0 50%, #6021de 50%, #6224de 100%);}
+.bgcolor-purple-02-FCD-app:hover,.bgcolor-purple-02-current-FCD-app{background:#8d69cf;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8d69cf), color-stop(50%, #6332c7), color-stop(50%, #551dc4), color-stop(100%, #561fc4));background-image: -webkit-linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%);background-image: -moz-linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%);background-image: -ms-linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%);background-image: -o-linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%);background-image: linear-gradient(top, #8d69cf 0%, #6332c7 50%, #551dc4 50%, #561fc4 100%);-webkit-background-clip: padding-box;}
+
+/**/
