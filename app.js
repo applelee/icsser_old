@@ -8,8 +8,8 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
-var MongoStore = require('connect-mongo')(express);
-var settings = require('./settings');
+//var MongoStore = require('connect-mongo')(express);
+//var settings = require('./settings');
 
 var app = express();
 
@@ -22,6 +22,7 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
+/*
 app.use(express.cookieParser());
 app.use(express.session({
 	secret: settings.cookieSecret,
@@ -29,6 +30,7 @@ app.use(express.session({
 		db: settings.db
 	})
 }));
+*/
 
 app.use(app.router);
 routes(app);
