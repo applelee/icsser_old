@@ -41,7 +41,7 @@ Article.prototype.save = function save(callback){
 					mongodb.close();
 					return callback(err);
 				}
-				collection.insert(post,{safe:true},function(err,result){
+				collection.insert(posts,{safe:true},function(err,result){
 					mongodb.close();
 					//console.log(doc);
 					return callback(err);
