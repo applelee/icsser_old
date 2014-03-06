@@ -63,7 +63,7 @@ module.exports = function(app){
 				req.flash('error',err);
 				return res.redirect('/');
 			}
-			return res.redirect('/admin123456');
+			return res.redirect('admin/index');
 		});
 	});
 	
