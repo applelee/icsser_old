@@ -15,11 +15,11 @@ block content
 									div.theme-db
 										div.white-db
 											h1
-												a(href='/home/detail/'+article[length-1]._id)= article[length-1].title
+												a(href='/home/detail/'+article[length-1]._id)= article[length-1].article.title
 										div.point-line-01
 										div.line-01
 									div.article-db
-										div.content!= article[x].intr
+										div.content!= article[x].article.intr
 									div(class='theme-db func-db')
 										div.white-db
 											a(href='/home/detail/'+article[length-1]._id) 查看全文
@@ -32,11 +32,11 @@ block content
 									div.theme-db
 										div.white-db
 											h1
-												a(href='/home/detail/'+article[x]._id)= article[x].title
+												a(href='/home/detail/'+article[x]._id)= article[x].article.title
 										div.point-line-01
 										div.line-01
 									div.article-db
-										div.content!= article[x].intr
+										div.content!= article[x].article.intr
 									div(class='theme-db func-db')
 										div.white-db
 											a(href='/home/detail/'+article[x]._id) 查看全文

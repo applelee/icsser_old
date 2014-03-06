@@ -1,7 +1,7 @@
 module.exports = {
 	cookieSecret: 'icsser',
 	db_name: 'EquuFIqxPbKLKpdhsSpT',
-	db_f: 'db_icsser',
+	db_table: 'db_icsser',
 	db_host: 'mongo.duapp.com',
 	db_port: '8908',
 	username: 'WDoXb1LUjfCZVTPg4mROIizn',

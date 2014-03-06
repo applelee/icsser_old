@@ -10,34 +10,34 @@ block content
 		div.g-mg30-12
 			div.article-detail
 				div.article-title
-					h1= article[0].title
+					h1= article[0].article.title
 				div.article-info
 					span
 						b 发布时间：
-						=article[0].time
+						=article[0].article.time
 					span
 						b 作者：
-						if(article[0].author)
-							=article[0].author
+						if(article[0].article.author)
+							=article[0].article.author
 						else
 							未知
 					span
 						b 来源：
-						if(article[0].source)
-							=article[0].source
+						if(article[0].article.source)
+							=article[0].article.source
 						else
 							未知
 					span
 						b 标签：
-						if(article[0].lable)
-							=article[0].lable
+						if(article[0].article.lable)
+							=article[0].article.lable
 						else
 							未知
 					//div.share-box
 						font 分享到：
 				div.article-cont
-					p!= article[0].content
-			ul(class='article-reply article-reply-02',id='reply_list')
+					p!= article[0].article.content
+			//ul(class='article-reply article-reply-02',id='reply_list')
 				- for(var x = 0; x < 3; x++)
 					li
 						div.theme-db

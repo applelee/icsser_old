@@ -4,6 +4,7 @@ var mongodb = require('./db');
 
 function Article(title,author,source,lable,intr,content){
 	var newDate = new Date();
+	
 	if(title)this.title = title;
 	if(author)this.author = author;
 	if(source)this.source = source;
@@ -25,18 +26,23 @@ Article.prototype.save = function save(callback){
 		intr:this.intr,
 		content:this.content
 	}
+	var posts = 
+	{
+		article:post
+	}
 	mongodb.open(function(err,db){
 		if(err){
 			mongodb.close();
 			return callback(err);
 		}
-		db.collection(settings.db,function(err,collection){
+		db.collection(settings.db_name,function(err,collection){
 			if(err){
 				mongodb.close();
 				return callback(err);
 			}
 			collection.insert(post,{safe:true},function(err,result){
 				mongodb.close();
+				//console.log(doc);
 				return callback(err);
 			});
 		});
@@ -48,13 +54,13 @@ Article.get = function get(obj,callback){
 		if (err) {
 			return callback(err);
 		}
-		db.collection(settings.db, function(err, collection) {
+		db.collection(settings.db_name, function(err, collection) {
 			if (err) {
 				mongodb.close();
 				return callback(err);
 			}
 			if(!obj){
-				collection.find().sort({_id:-1}).toArray(function(err, doc) {
+				collection.find({article:{$exists:true}}).sort({_id:-1}).toArray(function(err, doc) {
 					mongodb.close();
 					if (doc) {
 						callback(err, doc);

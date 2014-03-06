@@ -12,14 +12,14 @@ block content
 						div.theme-db
 							div.white-db
 								h1
-									a(href= '/home/detail/'+article[x]._id)= article[x].title
+									a(href= '/home/detail/'+article[x]._id)= article[x].article.title
 							div(class='point-line-01')
 							div.line-01
 							div(class='white-db white-db-01')
 								a(href='javascript:;',class='unfold') 展开
 								a(href= '/home/detail/'+article[x]._id) 查看全文
 						div(class='article-db article-db-01')
-							!= article[x].content
+							!= article[x].article.content
 						div(class='theme-db func-db')
 							div.white-db
 								a(href='javascript:;',class='collapse') 收起

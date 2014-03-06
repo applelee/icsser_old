@@ -3,38 +3,38 @@ var Article = require('../models/article.js');
 
 module.exports = function(app){
 	app.get('/', function (req, res) {
-		Article.get(null,function(err,article){
+		Article.get(null,function(err,doc){
 			res.render('home/index', {
 				length: 3,
-				article: article,
+				article: doc,
 				title: '非常道 - 首页'
 			});
 		});
 	});
 	
 	app.get('/article', function (req, res) {
-		Article.get(null,function(err,article){
+		Article.get(null,function(err,doc){
 			res.render('home/article', {
-				length: article.length,
-				article: article,
+				length: doc.length,
+				article: doc,
 				title: '非常道 - 列表页'
 			});
 		});
 	});
 	
 	app.get('/home/detail/:_id', function (req, res) {
-		Article.get(req.params._id, function(err, article) {
+		Article.get(req.params._id, function(err,doc) {
 			if (err) {
 				return res.redirect('/');
 			}
 			res.render('home/detail', {
-				article: article,
-				title: '非常道 - '+article[0].title
+				article: doc,
+				title: '非常道 - '+ doc[0].article.title
 			});
 		});
 	});
 	
-	app.get('/admin', function (req, res) {
+	app.get('/admin123456', function (req, res) {
 		res.render('admin/index', {
 			title: '非常道 - 后台管理'
 		});
