@@ -69,7 +69,7 @@ Article.get = function get(obj,callback){
 						mongodb.close();
 						if (doc) {
 							callback(err, doc);
-							console.log(doc);
+							//console.log(doc);
 						} else {
 							callback(err, null);
 						}
@@ -86,6 +86,27 @@ Article.get = function get(obj,callback){
 						}
 					});
 				}
+			});
+		});
+	});
+}
+
+Article.remove = function(obj,callback){
+	mongodb.open(function(err, db) {
+		db.authenticate(settings.username,settings.password,function(err,result){
+			if (err) {
+				mongodb.close();
+				res.end('Authenticate failed!');
+				return;   
+			}
+			db.collection(settings.db_name,function(err, collection) {
+				if (err) {
+					mongodb.close();
+					return callback(err);
+				}
+				collection.remove(function(err, doc) {
+					mongodb.close();
+				});
 			});
 		});
 	});
