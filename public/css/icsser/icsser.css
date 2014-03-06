@@ -250,7 +250,7 @@ a:hover{text-decoration:underline;}
 .article-info span b{font-weight:normal;}
 .article-info .share-box{float:left;}
 .article-info .share-box font{color:#999;}
-.article-cont{padding-bottom:10px;}
+.article-cont{padding-bottom:10px;line-height:30px;}
 .article-cont h1,.article-cont h2{font-size:20px;}
 .article-cont p{font-size:16px;color:#333;text-indent:2em;padding:15px 0;line-height:30px;}
 .article-detail pre.css{padding:20px;background:#eee;}
@@ -290,7 +290,7 @@ a:hover{text-decoration:underline;}
 .article-reply .article-db{padding:10px 25px 0 55px;margin-right:3px;border-right:1px solid #E6E6E6;overflow:hidden;}
 .gray-bg-01 .article-reply .article-db{border-right:1px solid #004FB1;}
 .article-reply .article-db img{width:200px;float:left;margin:7px 20px 5px 0;}
-.article-reply .content{height:75px;overflow:hidden;margin-bottom:10px;}
+.article-reply .content{height:75px;overflow:hidden;margin-bottom:10px;font-size:14;line-height:25px;}
 .article-reply .article-db p{line-height:25px;color:#666;font-size:14px;text-indent:2em;}
 .article-reply-01 .article-db{padding-left:15px;}
 .article-reply-01 .article-db p{overflow:hidden;}

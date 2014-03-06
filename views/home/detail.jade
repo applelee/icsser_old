@@ -36,7 +36,7 @@ block content
 					//div.share-box
 						font 分享到：
 				div.article-cont
-					p!= article[0].article.content
+					!= article[0].article.content
 			//ul(class='article-reply article-reply-02',id='reply_list')
 				- for(var x = 0; x < 3; x++)
 					li
