@@ -11,7 +11,7 @@ var db = new Db(db_name, new Server(db_host, db_port, {}), {w: 1});
  
 function testMongo(req, res) {
   function test(err, collection) {
-    collection.insert({a: 1}, function(err, docs) {
+    collection.find().toArray(function(err, docs) {
       if (err) {
         console.log(err);
         res.end('insert error');
@@ -25,6 +25,7 @@ function testMongo(req, res) {
         } 
         res.end('count: ' + count + '\n');
         db.close(); 
+		console.log(docs);
       });
     });  
   }
@@ -36,7 +37,6 @@ function testMongo(req, res) {
         res.end('Authenticate failed!');
         return;   
       }
-	  alert(result);
       db.collection('test_insert', test); 
     });  
   });
