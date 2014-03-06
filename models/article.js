@@ -51,36 +51,40 @@ Article.prototype.save = function save(callback){
 
 Article.get = function get(obj,callback){
 	mongodb.open(function(err, db) {
-		if (err) {
-			return callback(err);
-		}
-		db.collection(settings.db_name, function(err, collection) {
+		db.authenticate(settings.username,settings.password,function(err,result) { 
 			if (err) {
-				mongodb.close();
-				return callback(err);
+				db.close();
+				res.end('Authenticate failed!');
+				return;   
 			}
-			if(!obj){
-				collection.find({article:{$exists:true}}).sort({_id:-1}).toArray(function(err, doc) {
+			db.collection(settings.db_name,function(err, collection) {
+				if (err) {
 					mongodb.close();
-					if (doc) {
-						callback(err, doc);
-						//console.log(doc);
-					} else {
-						callback(err, null);
-					}
-				});
-			}else{
-				var obj_id = BSON.ObjectID.createFromHexString(obj);
-				collection.find({_id:{$in:[obj_id]}}).toArray(function(err, doc) {
-					mongodb.close();
-					if (doc) {
-						callback(err, doc);
-						//console.log(doc);
-					} else {
-						callback(err, null);
-					}
-				});
-			}
+					return callback(err);
+				}
+				if(!obj){
+					collection.find({article:{$exists:true}}).sort({_id:-1}).toArray(function(err, doc) {
+						mongodb.close();
+						if (doc) {
+							callback(err, doc);
+							console.log(doc);
+						} else {
+							callback(err, null);
+						}
+					});
+				}else{
+					var obj_id = BSON.ObjectID.createFromHexString(obj);
+					collection.find({_id:{$in:[obj_id]}}).toArray(function(err, doc) {
+						mongodb.close();
+						if (doc) {
+							callback(err, doc);
+							//console.log(doc);
+						} else {
+							callback(err, null);
+						}
+					});
+				}
+			});
 		});
 	});
 }

@@ -40,6 +40,18 @@ module.exports = function(app){
 		});
 	});
 	
+	app.get('/admin123456', function (req, res) {
+		res.render('admin/index', {
+			title: '非常道 - 后台管理'
+		});
+	});
+	
+	app.get('/ceshi', function (req, res) {
+		res.render('home/ceshi', {
+			title: '非常道 - 后台管理'
+		});
+	});
+	
 	app.post('/admin', function (req, res) {
 		var article = new Article(req.body['title'],req.body['author'],req.body['source'],req.body['lable'],req.body['intr'],req.body['content']);
 		article.save(function(err){
@@ -47,7 +59,7 @@ module.exports = function(app){
 				req.flash('error',err);
 				return res.redirect('/');
 			}
-			return res.redirect('/admin');
+			return res.redirect('/admin123456');
 		});
 	});
 	
