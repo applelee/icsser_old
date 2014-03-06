@@ -31,19 +31,21 @@ Article.prototype.save = function save(callback){
 		article:post
 	}
 	mongodb.open(function(err,db){
-		if(err){
-			mongodb.close();
-			return callback(err);
-		}
-		db.collection(settings.db_name,function(err,collection){
+		db.authenticate(settings.username,settings.password,function(err,result){
 			if(err){
 				mongodb.close();
 				return callback(err);
 			}
-			collection.insert(post,{safe:true},function(err,result){
-				mongodb.close();
-				//console.log(doc);
-				return callback(err);
+			db.collection(settings.db_name,function(err,collection){
+				if(err){
+					mongodb.close();
+					return callback(err);
+				}
+				collection.insert(post,{safe:true},function(err,result){
+					mongodb.close();
+					//console.log(doc);
+					return callback(err);
+				});
 			});
 		});
 	});
@@ -51,7 +53,7 @@ Article.prototype.save = function save(callback){
 
 Article.get = function get(obj,callback){
 	mongodb.open(function(err, db) {
-		db.authenticate(settings.username,settings.password,function(err,result) { 
+		db.authenticate(settings.username,settings.password,function(err,result){
 			if (err) {
 				mongodb.close();
 				res.end('Authenticate failed!');
