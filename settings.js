@@ -3,7 +3,7 @@ module.exports = {
 	db_name: 'yourmongodbname',
 	db_f: 'db_icsser',
 	db_host: 'mongo.duapp.com',
-	db_port: '8908',
+	db_port: '27017',
 	username: 'WDoXb1LUjfCZVTPg4mROIizn',
 	password: 'ZSAqBllra7n4LeCVjbpsGg0i0cyaDGdU'
 }
