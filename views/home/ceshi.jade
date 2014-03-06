@@ -2,4 +2,5 @@ extends ../public/hfer
 
 block content
 	h1= length
-	p= article
+	- for(var x = 0; x < length; x++)
+		p= article[x].content
