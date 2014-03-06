@@ -26,20 +26,18 @@ Article.prototype.save = function save(callback){
 		content:this.content
 	}
 	mongodb.open(function(err,db){
-		db.authenticate(settings.username, settings.password, function(err, result){
+		if(err){
+			mongodb.close();
+			return callback(err);
+		}
+		db.collection(settings.db,function(err,collection){
 			if(err){
 				mongodb.close();
 				return callback(err);
 			}
-			db.collection(settings.db_f,function(err,collection){
-				if(err){
-					mongodb.close();
-					return callback(err);
-				}
-				collection.insert(post,{safe:true},function(err,result){
-					mongodb.close();
-					return callback(err);
-				});
+			collection.insert(post,{safe:true},function(err,result){
+				mongodb.close();
+				return callback(err);
 			});
 		});
 	});
@@ -47,39 +45,36 @@ Article.prototype.save = function save(callback){
 
 Article.get = function get(obj,callback){
 	mongodb.open(function(err, db) {
-		db.authenticate(settings.username, settings.password, function(err, result){
-			if(err){
+		if (err) {
+			return callback(err);
+		}
+		db.collection(settings.db, function(err, collection) {
+			if (err) {
 				mongodb.close();
 				return callback(err);
 			}
-			db.collection(settings.db_f, function(err, collection) {
-				if (err) {
+			if(!obj){
+				collection.find().sort({_id:-1}).toArray(function(err, doc) {
 					mongodb.close();
-					return callback(err);
-				}
-				if(!obj){
-					collection.find().sort({_id:-1}).toArray(function(err, doc) {
-						mongodb.close();
-						if (doc) {
-							callback(err, doc);
-							//console.log(doc);
-						} else {
-							callback(err, null);
-						}
-					});
-				}else{
-					var obj_id = BSON.ObjectID.createFromHexString(obj);
-					collection.find({_id:{$in:[obj_id]}}).toArray(function(err, doc) {
-						mongodb.close();
-						if (doc) {
-							callback(err, doc);
-							//console.log(doc);
-						} else {
-							callback(err, null);
-						}
-					});
-				}
-			});
+					if (doc) {
+						callback(err, doc);
+						//console.log(doc);
+					} else {
+						callback(err, null);
+					}
+				});
+			}else{
+				var obj_id = BSON.ObjectID.createFromHexString(obj);
+				collection.find({_id:{$in:[obj_id]}}).toArray(function(err, doc) {
+					mongodb.close();
+					if (doc) {
+						callback(err, doc);
+						//console.log(doc);
+					} else {
+						callback(err, null);
+					}
+				});
+			}
 		});
 	});
 }
