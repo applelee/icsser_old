@@ -8,21 +8,20 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
-//var MongoStore = require('connect-mongo')(express);
-//var settings = require('./settings');
+var MongoStore = require('connect-mongo')(express);
+var settings = require('./settings');
 
 var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 18080);
-app.set('views', path.join(__dirname, 'views/home/'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
-/*
 app.use(express.cookieParser());
 app.use(express.session({
 	secret: settings.cookieSecret,
@@ -30,7 +29,6 @@ app.use(express.session({
 		db: settings.db
 	})
 }));
-*/
 
 app.use(app.router);
 routes(app);

@@ -75,7 +75,7 @@ $("#slider1").Xslider({
 // 默认配置
 affect: 'scrollx', //效果 有scrollx|scrolly|fade|none
 speed: 500, //动画速度
-space: 6000, //时间间隔
+space: 8000, //时间间隔
 auto: true, //自动滚动
 trigger: 'mouseover', //触发事件 注意用mouseover代替hover
 conbox: '.conbox', //内容容器id或class

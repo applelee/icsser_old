@@ -1,0 +1,44 @@
+extends ../public/hfer_admin
+
+block content
+
+	div(class='g-960-center content-admin',id='content_admin',scroll='no')
+		div.g-db-03
+			div.nav-title-admin 后台管理
+			div.nav-box-admin
+				a(href='javascript:;',class='current') 发布文章
+				a(href='javascript:;') 发布文章
+				a(href='javascript:;') 发布文章
+		div.content-01
+			div.func-box
+			form(class='article-sub',method='post')
+				table.form-01-FCD-app
+					tr
+						th 标题:
+						td
+							input(class='txt-input',name='title',type='text')
+					tr
+						th 作者:
+						td
+							input(class='txt-input',name='author',type='text')
+					tr
+						th 出处:
+						td
+							input(class='txt-input',name='source',type='text')
+					tr
+						th 标签:
+						td
+							input(class='txt-input',name='lable',type='text')
+					tr
+						th 简介:
+						td
+							textarea(name='intr',class='intr')
+					tr
+						th 内容:
+						td
+							textarea(name='content')
+					tr
+						th
+						td
+							a(href='',class='btn-FCD-app bgcolor-gray-02-FCD-app') 保存
+								input(value='',type='submit')

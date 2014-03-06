@@ -7,54 +7,41 @@ block content
 		div(class='block-null block-30-null')
 		div(class='main-general main-16 g-960-center')
 			div.cont-01
-				div(class='g-db-05 context-nomal-db lef-cont-01')
-					ul(class='article-reply article-reply-01')
-						li.las
-							div.theme-db
-								div.white-db
-									h1
-										a(href='') 为什么要用CSS框架
-								div.point-line-01
-								div.line-01
-							div.article-db
-								p 在一处用塑料布搭起的简易棚里，31岁的张庆秋正坐在被子上给9个月大的儿子喂奶。在一处用塑料布搭起的简易棚里，31岁的张庆秋正坐在被子上给9个月大的儿子喂奶。
-							div(class='theme-db func-db')
-								div.white-db
-									a(href='',class='las') 查看全文
-								div(class='point-line-01 point-line-02')
-								div(class='line-01 line-02')
-				div(class='g-db-05 g-ht-11 context-nomal-db lef-cont-01')
-					ul(class='article-reply article-reply-01')
-						li.las
-							div.theme-db
-								div.white-db
-									h1
-										a(href='') 为什么要用CSS框架
-								div.point-line-01
-								div.line-01
-							div.article-db
-								p 在一处用塑料布搭起的简易棚里，31岁的张庆秋正坐在被子上给9个月大的儿子喂奶。在一处用塑料布搭起的简易棚里，31岁的张庆秋正坐在被子上给9个月大的儿子喂奶。
-							div(class='theme-db func-db')
-								div.white-db
-									a(href='',class='las') 查看全文
-								div(class='point-line-01 point-line-02')
-								div(class='line-01 line-02')
-				div(class='g-db-05 context-nomal-db')
-					ul(class='article-reply article-reply-01')
-						li.las
-							div.theme-db
-								div.white-db
-									h1
-										a(href='') 为什么要用CSS框架
-								div.point-line-01
-								div.line-01
-							div.article-db
-								p 在一处用塑料布搭起的简易棚里，31岁的张庆秋正坐在被子上给9个月大的儿子喂奶。在一处用塑料布搭起的简易棚里，31岁的张庆秋正坐在被子上给9个月大的儿子喂奶。
-							div(class='theme-db func-db')
-								div.white-db
-									a(href='',class='las') 查看全文
-								div(class='point-line-01 point-line-02')
-								div(class='line-01 line-02')
+				- for(var x = 0; x < length; x++)
+					if(x == length-1)
+						div(class='g-db-05')
+							ul(class='article-reply article-reply-01')
+								li.las
+									div.theme-db
+										div.white-db
+											h1
+												a(href='/home/detail/'+article[length-1]._id)= article[length-1].title
+										div.point-line-01
+										div.line-01
+									div.article-db
+										div.content!= article[x].intr
+									div(class='theme-db func-db')
+										div.white-db
+											a(href='/home/detail/'+article[length-1]._id) 查看全文
+										div(class='point-line-01 point-line-02')
+										div(class='line-01 line-02')
+					else
+						div(class='g-db-05 lef-cont-01')
+							ul(class='article-reply article-reply-01')
+								li.las
+									div.theme-db
+										div.white-db
+											h1
+												a(href='/home/detail/'+article[x]._id)= article[x].title
+										div.point-line-01
+										div.line-01
+									div.article-db
+										div.content!= article[x].intr
+									div(class='theme-db func-db')
+										div.white-db
+											a(href='/home/detail/'+article[x]._id) 查看全文
+										div(class='point-line-01 point-line-02')
+										div(class='line-01 line-02')
 				div.clear-block
 		div(class='block-null block-30-null')
 	
@@ -64,22 +51,33 @@ block content
 		div.g-960-center
 			dl.icsser-list-03
 				dt 
-					h1 友情链接
-				- for(var x = 0; x < 5; x++)
+					h1 本站推荐
 					dd 
-						a(href='')法师打发斯蒂芬
+						a(href='http://www.w3school.com.cn/index.html',target='_blank') w3cschool 在线教程
+					dd 
+						a(href='http://html5.org/',target='_blank') HTML5
+					dd 
+						a(href='http://html5.org/',target='_blank') LESS (css预编译扩展)
+					dd 
+						a(href='http://jquery.com/',target='_blank') jquery (js库)
+					dd 
+						a(href='http://threejs.org/',target='_blank') THREEJS (3d图形引擎)
 			dl.icsser-list-03
 				dt 
-					h1 友情链接
-				- for(var x = 0; x < 5; x++)
+					h1 外部资源
 					dd 
-						a(href='')法师打发斯蒂芬
+						a(href='http://www.w3school.com.cn/index.html',target='_blank') w3cschool 在线教程
+					dd 
+						a(href='http://html5.org/',target='_blank') HTML5
+					dd 
+						a(href='http://html5.org/',target='_blank') LESS (css预编译扩展)
+					dd 
+						a(href='http://jquery.com/',target='_blank') jquery (js库)
+					dd 
+						a(href='http://threejs.org/',target='_blank') THREEJS (3d图形引擎)
 			dl(class='icsser-list-03 icsser-list-03-01')
 				dt 
 					h1 友情链接
-				- for(var x = 0; x < 5; x++)
-					dd 
-						a(href='')法师打发斯蒂芬
 	
 	include ../public/login_pop
 		

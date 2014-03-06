@@ -6,156 +6,49 @@ block content
 	div(class='block-null block-30-null')
 	div(class='main-general main-16 g-960-center')
 		div.g-mg30-12
-			ul.article-reply
-				li
-					div.theme-db
-						div.white-db
-							h1 
-								a(href='') 为什么要用CSS框架
-						div(class='point-line-01 point-line-04')
-						div.line-01
-						div(class='white-db white-db-01')
-							a(href="") 展开
-							a(href="") 查看全文
-				li
-					div.theme-db
-						div.white-db
-							h1 
-								a(href='') 为什么要用CSS框架
-						div(class='point-line-01 point-line-04')
-						div.line-01
-						div(class='white-db white-db-01')
-							a(href="") 展开
-							a(href="") 查看全文
-				li
-					div.theme-db
-						div.white-db
-							h1
-								a(href='') 为什么要用CSS框架
-						div.point-line-01
-						div.line-01
-					div(class='article-db article-db-01')
-						p 在一处用塑料布搭起的简易棚里，31岁的张庆秋正坐在被子上给9个月大的儿子喂奶。娃娃正哭闹着，"大人倒不要紧，今天晚上熬一夜。娃娃要吃东西，他平时是吃米糊的，我没有奶水。真不知道今天晚上他该怎么办。"
-					div(class='theme-db func-db')
-						div.white-db
-							a(href="") 收起
-							a(href="") 查看全文
-						div(class="point-line-01 point-line-02")
-						div(class="line-01 line-02")
-				li
-					div.theme-db
-						div.white-db
-							h1
-								a(href='') 为什么要用CSS框架
-						div.point-line-01
-						div.line-01
-					div(class='article-db article-db-01')
-						img(src="/pic/pic_01.jpg")
-						p 在一处用塑料布搭起的简易棚里，31岁的张庆秋正坐在被子上给9个月大的儿子喂奶。娃娃正哭闹着，"大人倒不要紧，今天晚上熬一夜。娃娃要吃东西，他平时是吃米糊的，我没有奶水。真不知道今天晚上他该怎么办。"
-						p 地震发生后，除了少数家中一大早就生起炉子的，大部分村民还没有吃上一口饭。下午的时候，救援队的官兵给他们每人送来了两瓶矿泉水。食物，是现在地震重灾区最紧缺的物资。
-					div(class='theme-db func-db')
-						div.white-db
-							a(href="") 收起
-							a(href="") 查看全文
-						div(class="point-line-01 point-line-02")
-						div(class="line-01 line-02")
-				li
-					div.theme-db
-						div.white-db
-							h1 
-								a(href='') 为什么要用CSS框架
-						div(class='point-line-01 point-line-04')
-						div.line-01
-						div(class='white-db white-db-01')
-							a(href="") 展开
-							a(href="") 查看全文
+			ul(class='article-reply',id='article_list')
+				- for(var x = 0; x < length; x++)
+					li
+						div.theme-db
+							div.white-db
+								h1
+									a(href= '/home/detail/'+article[x]._id)= article[x].title
+							div(class='point-line-01')
+							div.line-01
+							div(class='white-db white-db-01')
+								a(href='javascript:;',class='unfold') 展开
+								a(href= '/home/detail/'+article[x]._id) 查看全文
+						div(class='article-db article-db-01')
+							!= article[x].content
+						div(class='theme-db func-db')
+							div.white-db
+								a(href='javascript:;',class='collapse') 收起
+								a(href= '/home/detail/'+article[x]._id) 查看全文
+							div(class='point-line-01 point-line-02')
+							div(class='line-01 line-02')
 		div.g-db-04
 			div.block-23-null
-			div.title-db-01
+			//div.title-db-01
 				div.point-01
 				h1 用户登录
 				div.line-01
-			div.rig-login-db
+			//div.rig-login-db
 				include ../public/login_r
-			div.title-db-01
-				div(class="point-01 point-02")
+			//div.title-db-01
+				div(class='point-01')
 				h1 优质资源
 				div.line-01
-			div.rig-login-db
-				ul.icsser-list-02
-					li.great
-						a(href="",class="purple")
-							div.db-01
-							div.db-02
-							div.db-03
-							div.db-04
-							div.db-05 推荐
-							div.db-06
-							div.db-07
-							div.db-08
-							div.db-09
-						img(src="/pic/tx_01.gif")
-					li
-						a(a href="",class="purple")
-							div 非常道
-						img(src="/pic/tx_01.gif")
-					li
-						a(a href="",class="orange")
-							div 非常道
-						img(src="/pic/tx_01.gif")
-					li
-						a(a href="",class="purple")
-							div 非常道
-						img(src="/pic/tx_01.gif")
-					li
-						a(a href="",class="yellow")
-							div 非常道
-						img(src="/pic/tx_01.gif")
-					li
-						a(a href="",class="purple")
-							div 非常道
-						img(src="/pic/tx_01.gif")
-					li
-						a(a href="",class="red")
-							div 非常道
-						img(src="/pic/tx_01.gif")
-					li
-						a(a href="",class="purple-01")
-							div 非常道
-						img(src="/pic/tx_01.gif")
-					li
-						a(a href="",class="green")
-							div 非常道
-						img(src="/pic/tx_01.gif")
-					li
-						a(a href="",class="gray")
-							div 非常道
-						img(src="/pic/tx_01.gif")
-					li(class='great rig')
-						a(href="",class="blue")
-							div.db-01
-							div.db-02
-							div.db-03
-							div.db-04
-							div.db-05 推荐
-							div.db-06
-							div.db-07
-							div.db-08
-							div.db-09
-						img(src="/pic/tx_01.gif")
-					li
-						a(a href="",class="purple")
-							div 非常道
-						img(src="/pic/tx_01.gif")
+			//div.rig-login-db
+				include ../public/right_metro
 			div.title-db-01
-				div(class='point-01 point-02')
+				div(class='point-01')
 				h1 常见问题
 				div.line-01
 			div.rig-login-db
-				ul(class="icsser-list-01")
+				ul(class='icsser-list-01')
 					- for(var x = 0; x < 5; x++)
 						li
-							a(href="")打发打发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬第三方辅导费
+							a(href='')打发打发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬第三方辅导费
 			div.title-db-01
-				div(class="point-01 point-03")
+				div(class='point-01 point-03')
 		div.clear-block
