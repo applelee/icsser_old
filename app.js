@@ -23,16 +23,15 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(express.cookieParser());
-app.use(express.session({
+/*app.use(express.session({
 	secret: settings.cookieSecret,
 	store: new MongoStore({
 		db: settings.db_name
 	})
-}));
+}));*/
 
 app.use(app.router);
 routes(app);
-//app.use(express.router(routes));
 app.use(express.static(path.join(__dirname, 'public')));
 
 /*
@@ -57,7 +56,6 @@ app.dynamicHelpers({
 });
 */
 
-// development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
