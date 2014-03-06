@@ -53,7 +53,7 @@ Article.get = function get(obj,callback){
 	mongodb.open(function(err, db) {
 		db.authenticate(settings.username,settings.password,function(err,result) { 
 			if (err) {
-				db.close();
+				mongodb.close();
 				res.end('Authenticate failed!');
 				return;   
 			}

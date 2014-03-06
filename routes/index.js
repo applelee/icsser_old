@@ -1,6 +1,5 @@
 //var crypto = require('crypto');
 var Article = require('../models/article.js');
-var post = require('../models/post.js');
 
 module.exports = function(app){
 	app.get('/', function (req, res) {
@@ -48,9 +47,12 @@ module.exports = function(app){
 	});
 	
 	app.get('/ceshi', function (req, res) {
-		post(req,res);
-		res.render('home/ceshi', {
-			title: '非常道 - 后台管理'
+		Article.get(null,function(err,doc){
+			res.render('home/ceshi', {
+				length: doc.length,
+				article: doc,
+				title: '非常道 - 列表页'
+			});
 		});
 	});
 	
