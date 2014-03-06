@@ -1,66 +1,45 @@
-//var mongodb = require('./db');
-
-function Post(username,post,time){
-	this.user = username;
-	this.post = post;
-	if(time){
-		this.time = time;
-	}else{
-		this.time = new Date();
-	}
+var Db = require('mongodb').Db;
+var Server = require('mongodb').Server;
+/*数据库连接信息host,port,user,pwd*/
+var db_name = 'yourmongodbname';                  // 数据库名，从云平台获取
+var db_host =  'mongo.duapp.com';      // 数据库地址
+var db_port =  '8908';   // 数据库端口
+var username = 'yourak';                 // 用户名（API KEY）
+var password = 'yoursk';                 // 密码(Secret KEY)
+ 
+var db = new Db(db_name, new Server(db_host, db_port, {}), {w: 1});
+ 
+function testMongo(req, res) {
+  function test(err, collection) {
+    collection.insert({a: 1}, function(err, docs) {
+      if (err) {
+        console.log(err);
+        res.end('insert error');
+        return;
+      }
+      collection.count(function(err, count) {
+        if (err) {
+          console.log(err);
+          res.end('count error');
+          return;
+        } 
+        res.end('count: ' + count + '\n');
+        db.close(); 
+      });
+    });  
+  }
+ 
+  db.open(function(err, db) {
+    db.authenticate(username, password, function(err, result) { 
+      if (err) {
+        db.close();
+        res.end('Authenticate failed!');
+        return;   
+      }
+	  alert(result);
+      db.collection('test_insert', test); 
+    });  
+  });
 }
-module.exports = Post;
-
-Post.prototype.save = function save(callback){
-	var post = {
-		user:this.user,
-		post:this.post,
-		time:this.time
-	}
-	mongodb.open(function(err,db){
-		if(err){
-			return callback(err);
-		}
-		db.collection('posts',function(err,collection){
-			if(err){
-				mongodb.close();
-				return callback(err);
-			}
-			collection.ensureIndex('user');
-			collection.insert(post,{safe:true},function(err,post){
-				mongodb.close();
-				callback(err,post);
-			});
-		});
-	});
-}
-
-Post.get = function get(username,callback){
-	mongodb.open(function(err,db){
-		if(err){
-			return callback(err);
-		}
-		db.collection('posts',function(err,collection){
-			if(err){
-				mongodb.close();
-				return callback(err);
-			}
-			var query = {}
-			if(username){
-				query.user = username;
-			}
-			collection.find(query).sort({time:-1}).toArray(function(err,docs){
-				mongodb.close();
-				if(err){
-					callback(err,null);
-				}
-				var posts = [];
-				docs.forEach(function(doc,index){
-					var post = new Post(doc.user,doc.post,doc.time);
-					posts.push(post);
-				});
-				callback(null,posts);
-			});
-		});
-	});
-}
+ 
+module.exports = testMongo;
