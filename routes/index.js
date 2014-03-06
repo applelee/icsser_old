@@ -56,14 +56,14 @@ module.exports = function(app){
 		});
 	});
 	
-	app.post('/admin', function (req, res) {
+	app.post('/admin123456', function (req, res) {
 		var article = new Article(req.body['title'],req.body['author'],req.body['source'],req.body['lable'],req.body['intr'],req.body['content']);
 		article.save(function(err){
 			if(err){
 				req.flash('error',err);
 				return res.redirect('/');
 			}
-			return res.redirect('admin/index');
+			return res.redirect('/admin123456');
 		});
 	});
 	
