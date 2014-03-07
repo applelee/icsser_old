@@ -72,7 +72,7 @@ module.exports = function(app){
 	});
 	
 	app.get('/feichangdao', function (req, res) {
-		res.render('feichangdao/index.jade', {
+		res.render('../feichangdao/index.html', {
 			title: '非常道 - 后台管理'
 		});
 	});
