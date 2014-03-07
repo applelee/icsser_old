@@ -43,16 +43,6 @@ $(function () {
 		});
 	}
 	
-	//admin窗口大小
-	var $content_admin = $('#content_admin');
-	if($content_admin != null){
-		$content_admin.height($(window).height() - 65);
-		$('.content-01',$content_admin).width()
-		$(window).bind('resize',function(){
-			$content_admin.height($(window).height() - 65);
-		});
-	}
-	
 	//文章列表
 	var $article_list = $('#article_list');
 	if($article_list != null){

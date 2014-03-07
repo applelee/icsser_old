@@ -134,7 +134,7 @@
 
 /* 表单 */.form-01-FCD-app{width:100%;position:relative;z-index:5;}
 .form-01-FCD-app .sub-all input{cursor:pointer;text-align:center;height:27px;line-height:27px;}
-.form-01-FCD-app th{font-size:12px;font-weight:normal;width:95px;text-align:right;color:#333;height:40px;}
+.form-01-FCD-app th{font-size:12px;font-weight:normal;width:40px;text-align:right;color:#333;height:40px;}
 .form-01-FCD-app th font{color:#ff0000;padding:0 5px 0 0;}
 .form-01-FCD-app td{font-size:12px;color:#333;}
 .form-01-FCD-app td font{color:#ff0000;padding:0 5px;}
@@ -250,7 +250,7 @@ a:hover{text-decoration:underline;}
 .article-info span b{font-weight:normal;}
 .article-info .share-box{float:left;}
 .article-info .share-box font{color:#999;}
-.article-cont{padding-bottom:10px;line-height:30px;color:#333;}
+.article-cont{padding-bottom:10px;}
 .article-cont h1,.article-cont h2{font-size:20px;}
 .article-cont p{font-size:16px;color:#333;text-indent:2em;padding:15px 0;line-height:30px;}
 .article-detail pre.css{padding:20px;background:#eee;}
@@ -287,10 +287,10 @@ a:hover{text-decoration:underline;}
 #article_list .white-db{width:;}
 /*.gray-bg-01 .article-reply .theme-db h1 a{background:#fff;}*/
 
-.article-reply .article-db{padding:10px 25px 0 55px;margin-right:3px;border-right:1px solid #E6E6E6;overflow:hidden;}
+.article-reply .article-db{padding:10px 25px 0 55px;margin-right:3px;border-right:1px solid #E6E6E6;overflow:hidden;line-height:25px;color:#666;}
 .gray-bg-01 .article-reply .article-db{border-right:1px solid #004FB1;}
 .article-reply .article-db img{width:200px;float:left;margin:7px 20px 5px 0;}
-.article-reply .content{height:75px;overflow:hidden;margin-bottom:10px;font-size:14;line-height:25px;color:#666;}
+.article-reply .content{height:75px;overflow:hidden;margin-bottom:10px;line-height:25px;color:#666;}
 .article-reply .article-db p{line-height:25px;color:#666;font-size:14px;text-indent:2em;}
 .article-reply-01 .article-db{padding-left:15px;}
 .article-reply-01 .article-db p{overflow:hidden;}
@@ -342,14 +342,15 @@ a:hover{text-decoration:underline;}
 .header-01 .logo-db{margin-top:13px;}
 .header-admin{padding:0 15px;}
 .content-admin{width:100%;overflow:hidden;}
-.nav-box-admin{margin:0 5px;}
+.nav-box-admin{margin:0 0 0 10px;}
 .content-admin .g-db-03{height:100%;background:#004FB1;position:absolute;left:0;top:65px;}
-.nav-box-admin a,.nav-title-admin{display:block;height:32px;line-height:32px;font-size:16px;color:#fff;text-align:center;margin-bottom:5px;}
-.nav-box-admin a:hover,.nav-box-admin a.current{text-decoration:none;background:#f7f7f7;color:#004FB1;}
-.nav-box-admin a.current{cursor:text;}
+.nav-box-admin a,.nav-title-admin{display:block;height:32px;line-height:32px;font-size:16px;color:#fff;text-align:center;margin-bottom:2px;-moz-transition:background 0.5s ease 0s;-webkit-transition:background 0.5s ease 0s;-o-transition:background 0.5s ease 0s;-ms-transition:background 0.5s ease 0s;transition:background 0.5s ease 0s;}
+.nav-box-admin a:hover,.nav-box-admin a.current{text-decoration:none;background:#fff;color:#004FB1;}
+.nav-box-admin a.current{cursor:text;margin-right:0;}
 .nav-title-admin{border-bottom:1px solid #f7f7f7;font-weight:bold;font-size:18px;padding-bottom:5px;margin-bottom:10px;}
-.content-admin .content-01{width:auto;padding-left:180px;height:100%;overflow:auto;}
-.content-admin .func-box{height:32px;width:100%;background:#f7f7f7;}
+.content-admin .content-01{width:auto;margin-left:180px;height:100%;overflow:auto;position:relative;}
+.content-admin .func-box{height:32px;width:100%;background:#f7f7f7;position:absolute;left:0;top:0;z-index:50;}
+.content-admin .post-get-box{padding:42px 30px 0;}
 body.no-scroll{overflow:hidden;}
 
 
@@ -446,6 +447,14 @@ body.no-scroll{overflow:hidden;}
 .tb-01 input,.tb-01 textarea{width:100%;font-size:14px;height:40px;}
 .tb-01 textarea{height:120px;padding:5px 0;}
 .tb-01 .sub{width:80px;height:26px;background:#C9CDE9;cursor:pointer;color:#333;}
+
+/* 表格 */
+.tab-02{width:360px;background:#d9e6f0;margin:5px auto;width:100%;}
+.tab-02 td{background:#fff;height:25px;text-indent:5px;font-size:12px;white-space:nowrap;}
+.tab-02 .thead td,.tab_01 th{background:#f3f9ff;font-size:12px;font-weight:bold;color:#666;line-height:25px;}
+.tab-02 th{color:#f3f9ff;font-weight:normal;font-size:12px;text-align:right;padding-right:5px;color:#375a90;}
+.tab-02 td font{color:#375a90;}
+.tab-02 .ping_ico,.tab-02 .down_ico{margin-right:5px;}
 
 
 /* 登录弹窗 */.login-pop-box{position:fixed;left:0;top:0;width:100%;_position:absolute;z-index:3000;display:none;}
