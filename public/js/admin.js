@@ -6,9 +6,14 @@ $(function () {
 	var $content_admin = $('#content_admin');
 	if($content_admin != null){
 		$content_admin.height($(window).height() - 65);
-		$('.content-01',$content_admin).width()
+		$('.tab-02',$content_admin).width(function(){
+			return $(this).parent().width();
+		});
 		$(window).bind('resize',function(){
 			$content_admin.height($(window).height() - 65);
+			$('.tab-02',$content_admin).width(function(){
+				return $(this).parent().width();
+			});
 		});
 	}
 	
