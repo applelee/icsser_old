@@ -35,12 +35,6 @@ module.exports = function(app){
 	});
 	
 	app.get('/admin123456', function (req, res) {
-		res.render('admin/index', {
-			title: '非常道 - 后台管理'
-		});
-	});
-	
-	app.get('/admin123456', function (req, res) {
 		Article.get(null,function(err,doc){
 			res.render('admin/index', {
 				length: doc.length,
