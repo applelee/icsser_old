@@ -450,7 +450,7 @@ body.no-scroll{overflow:hidden;}
 
 /* 表格 */
 .tab-02{width:360px;background:#d9e6f0;margin:5px auto;width:100%;}
-.tab-02 td{background:#fff;height:30px;font-size:14px;padding:0 10px;white-space:nowrap;color:#666;}
+.tab-02 td{background:#fff;height:30px;font-size:14px;padding:0 10px;color:#666;}
 .tab-02 .thead td,.tab_01 th{background:#f3f9ff;font-size:12px;font-weight:bold;color:#666;line-height:25px;}
 .tab-02 th{color:#f3f9ff;padding:0 5px;color:#375a90;width:30px;background:#f3f9ff;}
 .tab-02 td font{color:#375a90;}
