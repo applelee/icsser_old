@@ -1,10 +1,13 @@
-extends ../public/hfer
+extends ../public/hfer_list
 
 block content
 	div.nav-breadcrumbs
 		div.g-960-center
-			<a href='/' class='fir'>首页</a>><a href='/article'>列表</a>-
-			span= article[0].title
+			a(href='/') 首页
+			b >
+			a(href='/article')= article[0].article.lable
+			b >
+			span= article[0].article.title
 	div(class='block-null block-30-null')
 	div(class='main-general main-16 g-960-center')
 		div.g-mg30-12
@@ -36,7 +39,7 @@ block content
 					//div.share-box
 						font 分享到：
 				div.article-cont
-					!= article[0].article.content
+					p!= article[0].article.content
 			//ul(class='article-reply article-reply-02',id='reply_list')
 				- for(var x = 0; x < 3; x++)
 					li
@@ -102,9 +105,9 @@ block content
 				div.line-01
 			div.rig-login-db
 				ul(class='icsser-list-01')
-					- for(var x = 0; x < 6; x++)
+					- for(var x = 0; x < length; x++)
 						li
-							a(href='') r_article.article[x].title
+							a(href='')= articles[x].article.title
 			div.title-db-01
 				div(class='point-01 point-03')
 		div.clear-block

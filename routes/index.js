@@ -13,47 +13,41 @@ module.exports = function(app){
 	});
 	
 	app.get('/article', function (req, res) {
-		Article.get(null,function(err,doc){
+		Article.get(null,function(err,docs){
 			res.render('home/article', {
-				length: doc.length,
-				article: doc,
+				length: docs.length,
+				article: docs,
 				title: '非常道 - 列表页'
 			});
 		});
 	});
 	
 	app.get('/home/detail/:_id', function (req, res) {
-		Article.get(req.params._id, function(err,doc) {
-			if (err) {
-				return res.redirect('/');
-			}
-			res.render('home/detail', {
-				article: doc,
-				title: '非常道 - '+ doc[0].article.title
+		Article.get(null,function(err,docs){
+			Article.get(req.params._id, function(err,doc) {
+				if (err) {
+					return res.redirect('/');
+				}
+				res.render('home/detail', {
+					articles: docs,
+					length: docs.length,
+					article: doc,
+					title: '非常道 - '+ doc[0].article.title
+				});
 			});
 		});
 	});
 	
-	app.get('/admin123456', function (req, res) {
+	//添加文章
+	app.get('/admin123456', function (req, res){
 		Article.get(null,function(err,doc){
-			res.render('admin/index', {
+			res.render('admin/add-article', {
 				length: doc.length,
 				article: doc,
-				title: '非常道 - 后台管理'
+				title: '非常道 - 添加'
 			});
 		});
 	});
-	
-	app.get('/ceshi', function (req, res) {
-		Article.get(null,function(err,doc){
-			res.render('home/ceshi', {
-				length: doc.length,
-				article: doc,
-				title: '非常道 - 列表页'
-			});
-		});
-	});
-	
 	app.post('/admin123456', function (req, res) {
 		var article = new Article(req.body['title'],req.body['author'],req.body['source'],req.body['lable'],req.body['intr'],req.body['content']);
 		article.save(function(err){
@@ -62,6 +56,28 @@ module.exports = function(app){
 				return res.redirect('/');
 			}
 			return res.redirect('/admin123456');
+		});
+	});
+	
+	//删除选中文章
+	app.get('/admin654321', function (req, res){
+		Article.get(null,function(err,doc){
+			res.render('admin/delete-article', {
+				length: doc.length,
+				article: doc,
+				title: '非常道 - 删除'
+			});
+		});
+	});
+	app.post('/admin654321', function (req, res){
+		Article.remove_func(req.body.arr_data,function(err){
+			Article.get(null,function(err,doc){
+				res.render('admin/delete-article', {
+					length: doc.length,
+					article: doc,
+					title: '非常道 - 删除'
+				});
+			});
 		});
 	});
 	

@@ -91,22 +91,23 @@ Article.get = function get(obj,callback){
 	});
 }
 
-Article.remove = function(obj,callback){
-	mongodb.open(function(err, db) {
-		db.authenticate(settings.username,settings.password,function(err,result){
+Article.remove_func = function(obj_data,callback){
+	db.authenticate(settings.username,settings.password,function(err,result){
+		mongodb.open(function(err, db){
 			if (err) {
-				mongodb.close();
-				res.end('Authenticate failed!');
-				return;   
+				return callback(err);
 			}
-			db.collection(settings.db_name,function(err, collection) {
+			db.collection(settings.db, function(err, collection) {
 				if (err) {
 					mongodb.close();
 					return callback(err);
 				}
-				collection.remove(function(err, doc) {
-					mongodb.close();
-				});
+				//console.log(obj_data);
+				for(i in obj_data){
+					collection.remove({_id:BSON.ObjectID.createFromHexString(obj_data[i])});
+				}
+				mongodb.close();
+				callback(err);
 			});
 		});
 	});

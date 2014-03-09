@@ -1,9 +1,9 @@
-extends ../public/hfer
+extends ../public/hfer_list
 
 block content
 	include ../public/slide_t
 	
-	div(class='block-null block-30-null')
+	div(class='block-null block-20-null')
 	div(class='main-general main-16 g-960-center')
 		div.g-mg30-12
 			ul(class='article-reply',id='article_list')
@@ -19,7 +19,7 @@ block content
 								a(href='javascript:;',class='unfold') 展开
 								a(href= '/home/detail/'+article[x]._id) 查看全文
 						div(class='article-db article-db-01')
-							div.content!= article[x].article.intr
+							!= article[x].article.intr
 						div(class='theme-db func-db')
 							div.white-db
 								a(href='javascript:;',class='collapse') 收起
@@ -42,13 +42,13 @@ block content
 				include ../public/right_metro
 			div.title-db-01
 				div(class='point-01')
-				h1 常见问题
+				h1 推荐内容
 				div.line-01
 			div.rig-login-db
 				ul(class='icsser-list-01')
-					- for(var x = 0; x < 5; x++)
+					- for(var x = 0; x < length; x++)
 						li
-							a(href='')打发打发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬第三方辅导费
+							a(href='')= article[x].article.title
 			div.title-db-01
 				div(class='point-01 point-03')
 		div.clear-block
