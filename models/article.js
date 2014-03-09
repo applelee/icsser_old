@@ -97,7 +97,7 @@ Article.remove_func = function(obj_data,callback){
 			if (err) {
 				return callback(err);
 			}
-			db.collection(settings.db, function(err, collection) {
+			db.collection(settings.db_name, function(err, collection) {
 				if (err) {
 					mongodb.close();
 					return callback(err);
