@@ -97,12 +97,11 @@ Article.remove_func = function(obj_data,callback){
 			if (err) {
 				return callback(err);
 			}
-			db.collection(settings.db, function(err, collection) {
+			db.collection(settings.db_name, function(err, collection) {
 				if (err) {
 					mongodb.close();
 					return callback(err);
 				}
-				console.log(obj_data);
 				for(i in obj_data){
 					collection.remove({_id:BSON.ObjectID.createFromHexString(obj_data[i])});
 				}
