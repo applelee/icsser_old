@@ -92,17 +92,17 @@ Article.get = function get(obj,callback){
 }
 
 Article.remove_func = function(obj_data,callback){
-	db.authenticate(settings.username,settings.password,function(err,result){
-		mongodb.open(function(err, db){
+	mongodb.open(function(err, db){
+		db.authenticate(settings.username,settings.password,function(err,result){
 			if (err) {
 				return callback(err);
 			}
-			db.collection(settings.db_name, function(err, collection) {
+			db.collection(settings.db, function(err, collection) {
 				if (err) {
 					mongodb.close();
 					return callback(err);
 				}
-				//console.log(obj_data);
+				console.log(obj_data);
 				for(i in obj_data){
 					collection.remove({_id:BSON.ObjectID.createFromHexString(obj_data[i])});
 				}
