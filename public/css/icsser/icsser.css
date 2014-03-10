@@ -251,8 +251,9 @@ a:hover{text-decoration:underline;}
 .article-info .share-box{float:left;}
 .article-info .share-box font{color:#999;}
 .article-cont{padding-bottom:10px;line-height:30px;color:#333;}
-.article-cont h1,.article-cont h2{font-size:20px;}
+.article-cont h1,.article-cont h2{font-size:16px;}
 .article-cont p{font-size:16px;color:#333;text-indent:2em;padding:15px 0;line-height:30px;}
+.article-cont p a{font-size:16px;color:#004FB1;}
 .article-detail pre.css{padding:20px;background:#eee;}
 
 
