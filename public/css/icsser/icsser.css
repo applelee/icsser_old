@@ -457,6 +457,8 @@ body.no-scroll{overflow:hidden;}
 .tab-02 td font{color:#375a90;}
 .tab-02 .ping_ico,.tab-02 .down_ico{margin-right:5px;}
 .tab-02 .inp-txt{display:none;}
+.tab-02 a.btn-updata{display:block;white-space:nowrap;height:24px;line-height:24px;text-align:center;background:#ccc;color:#fff;}
+.tab-02 a.btn-updata:hover{background:#004FB1;}
 
 
 /* 登录弹窗 */.login-pop-box{position:fixed;left:0;top:0;width:100%;_position:absolute;z-index:3000;display:none;}

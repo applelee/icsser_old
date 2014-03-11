@@ -90,6 +90,15 @@ module.exports = function(app){
 				title: '非常道 - 删除'
 			});
 		});
+		Article.get(req.params._id, function(err,doc) {
+			if (err) {
+				return res.redirect('/');
+			}
+			res.render('home/detail', {
+				article: doc,
+				title: '非常道 - '+ doc[0].article.title
+			});
+		});
 	});
 	app.post('/admin_delete', function (req, res){
 		Article.remove_func(req.body.arr_data,function(err){

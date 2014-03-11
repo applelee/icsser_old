@@ -8,7 +8,7 @@ block content
 			div(class='nav-box-admin',id='admin_nav')
 				a(href='/admin_insert') 添加文章
 				a(href='/admin_delete') 删除文章
-				a(href='javascript:;',class='current') 修改
+				//a(href='javascript:;',class='current') 修改
 		div.content-01
 			div.func-box
 			div.post-get-box
@@ -17,31 +17,31 @@ block content
 						tr
 							th 标题:
 							td
-								input(class='txt-input',name='title',type='text')
+								input(class='txt-input',name='title',type='text')= article[0].article.title
 						tr
 							th 作者:
 							td
-								input(class='txt-input',name='author',type='text')
+								input(class='txt-input',name='author',type='text')= article[0].article.author
 						tr
 							th 出处:
 							td
-								input(class='txt-input',name='source',type='text')
+								input(class='txt-input',name='source',type='text')= article[0].article.source
 						tr
 							th 标签:
 							td
-								input(class='txt-input',name='lable',type='text')
+								input(class='txt-input',name='lable',type='text')= article[0].article.lable
 						tr
 							th 简介:
 							td
-								textarea(name='intr',class='intr')
+								textarea(name='intr',class='intr')= article[0].article.intr
 						tr
 							th 内容:
 							td
-								textarea(name='content')
+								textarea(name='content')= article[0].article.content
 						tr
 							th
 							td
-								a(href='',class='btn-FCD-app bgcolor-gray-02-FCD-app') 保存
+								a(href='',class='btn-FCD-app bgcolor-gray-02-FCD-app') 更新
 									input(value='',type='submit')
 			div(class='post-get-box',style='display:none')
 				form(class='article-delete',method='post')
