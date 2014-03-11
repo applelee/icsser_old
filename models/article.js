@@ -112,7 +112,7 @@ Article.remove_func = function(obj_data,callback){
 	});
 }
 
-Article.prototype.updata = function(obj_data,callback){
+Article.prototype.update = function(obj_data,callback){
 	var post = {
 		title:this.title,
 		author:this.author,
@@ -137,7 +137,7 @@ Article.prototype.updata = function(obj_data,callback){
 					return callback(err);
 				}
 				var obj = BSON.ObjectID.createFromHexString(obj_data);
-				collection.updata({_id:obj},{$set:{_id:'wocao'}},function(err,result){
+				collection.update({_id:obj},{$set:{article:post}},function(err,result){
 					mongodb.close();
 					//console.log(doc);
 					return callback(err);

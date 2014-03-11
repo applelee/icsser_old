@@ -95,7 +95,7 @@ module.exports = function(app){
 	});
 	app.post('/admin_updata/:_id', function (req, res){
 		var article = new Article(req.body['title'],req.body['author'],req.body['source'],req.body['lable'],req.body['intr'],req.body['content']);
-		article.updata(req.params._id, function(err){
+		article.update(req.params._id, function(err){
 			if(err){
 				req.flash('error',err);
 				return res.redirect('/');
