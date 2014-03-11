@@ -253,7 +253,8 @@ a:hover{text-decoration:underline;}
 .article-cont{padding-bottom:10px;line-height:30px;color:#333;}
 .article-cont h1,.article-cont h2{font-size:16px;}
 .article-cont p{font-size:16px;color:#333;text-indent:2em;padding:15px 0;line-height:30px;}
-.article-cont p a{font-size:16px;color:#004FB1;}
+.article-cont a{font-size:16px;color:#004FB1;}
+.article-cont div{ont-size:16px;color:#333;text-indent:2em;padding:15px 0;line-height:30px;}
 .article-detail pre.css{padding:20px;background:#eee;}
 
 

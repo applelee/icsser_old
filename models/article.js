@@ -111,3 +111,38 @@ Article.remove_func = function(obj_data,callback){
 		});
 	});
 }
+
+Article.prototype.updata = function(obj_data,callback){
+	var post = {
+		title:this.title,
+		author:this.author,
+		source:this.source,
+		lable:this.lable,
+		intr:this.intr,
+		content:this.content
+	}
+	var posts = 
+	{
+		article:post
+	}
+	mongodb.open(function(err,db){
+		db.authenticate(settings.username,settings.password,function(err,result){
+			if(err){
+				mongodb.close();
+				return callback(err);
+			}
+			db.collection(settings.db_name,function(err,collection){
+				if(err){
+					mongodb.close();
+					return callback(err);
+				}
+				var obj = BSON.ObjectID.createFromHexString(obj_data);
+				collection.updata({_id:obj},{article:posts,_id:obj},function(err,result){
+					mongodb.close();
+					//console.log(doc);
+					return callback(err);
+				});
+			});
+		});
+	});
+}
