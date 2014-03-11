@@ -118,6 +118,7 @@ Article.prototype.update = function(obj_data,callback){
 		author:this.author,
 		source:this.source,
 		lable:this.lable,
+		time:this.time,
 		intr:this.intr,
 		content:this.content
 	}
