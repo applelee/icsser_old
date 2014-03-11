@@ -137,7 +137,7 @@ Article.prototype.updata = function(obj_data,callback){
 					return callback(err);
 				}
 				var obj = BSON.ObjectID.createFromHexString(obj_data);
-				collection.updata({_id:obj},{article:posts,_id:obj},function(err,result){
+				collection.save({article:posts,_id:obj},function(err,result){
 					mongodb.close();
 					//console.log(doc);
 					return callback(err);
