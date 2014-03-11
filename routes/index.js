@@ -39,28 +39,28 @@ module.exports = function(app){
 	});
 	
 	//添加文章
-	app.get('/admin123456', function (req, res){
+	app.get('/admin_insert', function (req, res){
 		Article.get(null,function(err,doc){
-			res.render('admin/add-article', {
+			res.render('admin/insert-article', {
 				length: doc.length,
 				article: doc,
 				title: '非常道 - 添加'
 			});
 		});
 	});
-	app.post('/admin123456', function (req, res) {
+	app.post('/admin_insert', function (req, res) {
 		var article = new Article(req.body['title'],req.body['author'],req.body['source'],req.body['lable'],req.body['intr'],req.body['content']);
 		article.save(function(err){
 			if(err){
 				req.flash('error',err);
 				return res.redirect('/');
 			}
-			return res.redirect('/admin123456');
+			return res.redirect('/admin_insert');
 		});
 	});
 	
 	//删除选中文章
-	app.get('/admin654321', function (req, res){
+	app.get('/admin_delete', function (req, res){
 		Article.get(null,function(err,doc){
 			res.render('admin/delete-article', {
 				length: doc.length,
@@ -69,10 +69,32 @@ module.exports = function(app){
 			});
 		});
 	});
-	app.post('/admin654321', function (req, res){
+	app.post('/admin_delete', function (req, res){
 		Article.remove_func(req.body.arr_data,function(err){
 			Article.get(null,function(err,doc){
 				res.render('admin/delete-article', {
+					length: doc.length,
+					article: doc,
+					title: '非常道 - 删除'
+				});
+			});
+		});
+	});
+	
+	//修改文章
+	app.get('/admin_updata/:_id', function (req, res){
+		Article.get(null,function(err,doc){
+			res.render('admin/delete-article', {
+				length: doc.length,
+				article: doc,
+				title: '非常道 - 删除'
+			});
+		});
+	});
+	app.post('/admin_delete', function (req, res){
+		Article.remove_func(req.body.arr_data,function(err){
+			Article.get(null,function(err,doc){
+				res.render('admin/delete-article/', {
 					length: doc.length,
 					article: doc,
 					title: '非常道 - 删除'
