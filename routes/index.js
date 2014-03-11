@@ -83,13 +83,6 @@ module.exports = function(app){
 	
 	//修改文章
 	app.get('/admin_updata/:_id', function (req, res){
-		Article.get(null,function(err,doc){
-			res.render('admin/delete-article', {
-				length: doc.length,
-				article: doc,
-				title: '非常道 - 删除'
-			});
-		});
 		Article.get(req.params._id, function(err,doc) {
 			if (err) {
 				return res.redirect('/');
