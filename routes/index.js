@@ -87,7 +87,7 @@ module.exports = function(app){
 			if (err) {
 				return res.redirect('/');
 			}
-			res.render('home/detail', {
+			res.render('admin/updata-article', {
 				article: doc,
 				title: '非常道 - '+ doc[0].article.title
 			});
@@ -96,7 +96,7 @@ module.exports = function(app){
 	app.post('/admin_delete', function (req, res){
 		Article.remove_func(req.body.arr_data,function(err){
 			Article.get(null,function(err,doc){
-				res.render('admin/delete-article/', {
+				res.render('admin/delete-article', {
 					length: doc.length,
 					article: doc,
 					title: '非常道 - 删除'
