@@ -300,7 +300,7 @@ a:hover{text-decoration:underline;}
 .article-reply-01 .article-db{padding-left:15px;}
 .article-reply-01 .article-db p{overflow:hidden;}
 .blue-bg .article-reply-01 .article-db p{color:#fff;}
-.article-reply .func-db{height:25px;margin-left:55px;}
+.article-reply .func-db{height:25px;margin-left:55px;_margin-left:0;}
 .article-reply .func-db .white-db{float:right;padding:0 10px;margin-right:19px;}
 .article-reply .func-db .white-db a{float:left;height:inherit;font-size:14px;line-height:25px;padding:0 15px;color:#333;background:#eee;-moz-transition:background 0.5s ease 0s;-webkit-transition:background 0.5s ease 0s;-o-transition:background 0.5s ease 0s;-ms-transition:background 0.5s ease 0s;transition:background 0.5s ease 0s;margin-right:1px;}
 .article-reply-01 .func-db .white-db a{background:#fff;}
