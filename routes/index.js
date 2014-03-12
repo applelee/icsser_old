@@ -7,7 +7,7 @@ module.exports = function(app){
 			res.render('home/index', {
 				length: 3,
 				article: doc,
-				title: '非常道 - 首页'
+				title: '我是前端 - 首页'
 			});
 		});
 	});
@@ -17,7 +17,7 @@ module.exports = function(app){
 			res.render('home/article', {
 				length: docs.length,
 				article: docs,
-				title: '非常道 - 列表页'
+				title: '我是前端 - 文章'
 			});
 		});
 	});
@@ -32,7 +32,7 @@ module.exports = function(app){
 					articles: docs,
 					length: docs.length,
 					article: doc,
-					title: '非常道 - '+ doc[0].article.title
+					title: '我是前端 - '+ doc[0].article.title
 				});
 			});
 		});
@@ -40,7 +40,7 @@ module.exports = function(app){
 	
 	app.get('/withus', function (req, res) {
 		res.render('home/withus', {
-			title: '非常道 - 关于我们'
+			title: '我是前端 - 关于我们'
 		});
 	});
 	
@@ -50,7 +50,7 @@ module.exports = function(app){
 			res.render('admin/insert-article', {
 				length: doc.length,
 				article: doc,
-				title: '非常道 - 添加'
+				title: '我是前端 - 添加'
 			});
 		});
 	});
@@ -71,7 +71,7 @@ module.exports = function(app){
 			res.render('admin/delete-article', {
 				length: doc.length,
 				article: doc,
-				title: '非常道 - 删除'
+				title: '我是前端 - 删除'
 			});
 		});
 	});
@@ -81,7 +81,7 @@ module.exports = function(app){
 				res.render('admin/delete-article', {
 					length: doc.length,
 					article: doc,
-					title: '非常道 - 删除'
+					title: '我是前端 - 删除'
 				});
 			});
 		});
