@@ -48,7 +48,7 @@ block content
 				ul(class='icsser-list-01')
 					- for(var x = 0; x < length; x++)
 						li
-							a(href='')= article[x].article.title
+							a(href='/home/detail/'+article[x]._id)= article[x].article.title
 			div.title-db-01
 				div(class='point-01 point-03')
 		div.clear-block
