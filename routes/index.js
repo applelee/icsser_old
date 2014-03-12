@@ -38,6 +38,12 @@ module.exports = function(app){
 		});
 	});
 	
+	app.get('/withus', function (req, res) {
+		res.render('home/withus', {
+			title: '非常道 - 关于我们'
+		});
+	});
+	
 	//添加文章
 	app.get('/admin_insert', function (req, res){
 		Article.get(null,function(err,doc){
