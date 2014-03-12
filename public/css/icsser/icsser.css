@@ -217,6 +217,9 @@ a:hover{text-decoration:underline;}
 .main-slide .butt-db ul{overflow:hidden;display:inline-block;}
 .main-slide .butt-db li{display:block;float:left;background:#ddd;overflow:hidden;width:20px;height:5px;cursor:pointer;overflow:hidden;-moz-transition:background 0.5s ease 0s;-webkit-transition:background 0.5s ease 0s;-o-transition:background 0.5s ease 0s;-ms-transition:background 0.5s ease 0s;transition:background 0.5s ease 0s;}
 .main-slide .butt-db li:hover,.main-slide .butt-db .current{background:#004FB1;}
+.unfined-box{padding:45px 0 0;}
+.unfined-box img{float:left;margin-right:50px;}
+.unfined-box p{color:#004FB1;font-size:16px;line-height:30px;}
 /**/
 
 
