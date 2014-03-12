@@ -337,6 +337,11 @@ a:hover{text-decoration:underline;}
 .article-reply .reply-textarea textarea.current{border-color:#878ECA;box-shadow:0 0 5px #ccc inset;}
 /**/
 
+/* 关于我们 */
+.withus-box{}
+.withus-box h1{font-size:30px;color:#333;}
+.withus-box p{color:#666;font-size:20px;}
+
 
 /*右线*/
 .rig-login-db{margin-left:3px;border-left:1px solid #004fb1;padding:20px 0 20px 26px;_float:right;_margin:-4px 0 0 3px;_overflow:hidden;}
