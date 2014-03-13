@@ -12,18 +12,18 @@ block content
 						div.theme-db
 							div.white-db
 								h1
-									a(href= '/home/detail/'+article[x]._id)= article[x].article.title
+									a(href= '/home/detail/'+articles[x]._id)= articles[x].article.title
 							div(class='point-line-01')
 							div.line-01
 							div(class='white-db white-db-01')
 								a(href='javascript:;',class='unfold') 展开
-								a(href= '/home/detail/'+article[x]._id) 查看全文
+								a(href= '/home/detail/'+articles[x]._id) 查看全文
 						div(class='article-db article-db-01')
-							!= article[x].article.intr
+							!= articles[x].article.intr
 						div(class='theme-db func-db')
 							div.white-db
 								a(href='javascript:;',class='collapse') 收起
-								a(href= '/home/detail/'+article[x]._id) 查看全文
+								a(href= '/home/detail/'+articles[x]._id) 查看全文
 							div(class='point-line-01 point-line-02')
 							div(class='line-01 line-02')
 		div.g-db-04
