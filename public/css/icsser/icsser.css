@@ -342,8 +342,10 @@ a:hover{text-decoration:underline;}
 
 /* 关于我们 */
 .withus-box{margin-top:100px;}
-.withus-box h1{font-size:20px;color:#333;font-weight:normal;}
-.withus-box p{color:#333;font-size:30px;}
+.withus-box h1{font-size:24px;color:#333;font-weight:normal;}
+.withus-box img{margin:20px 0 0;}
+.withus-box p{color:#333;font-size:34px;}
+.withus-box p a{color:#004FB1;font-size:24px;}
 
 
 /*右线*/
