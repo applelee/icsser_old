@@ -16,7 +16,7 @@ module.exports = function(app){
 		Article.get(null,function(err,docs){
 			res.render('home/article', {
 				length: docs.length,
-				article: docs,
+				articles: docs,
 				title: '我是前端 - 文章'
 			});
 		});
