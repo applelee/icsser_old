@@ -298,7 +298,7 @@ a:hover{text-decoration:underline;}
 .gray-bg-01 .article-reply,.gray-bg-01 li{_width:100%;_overflow:hidden;}
 .gray-bg-01 .article-reply .func-db{_margin-left:0;}
 .article-reply .article-db img{width:200px;float:left;margin:7px 20px 5px 0;}
-.article-reply .content{height:75px;overflow:hidden;margin-bottom:10px;line-height:25px;color:#666;}
+.article-reply .content{height:75px;overflow:hidden;margin-bottom:10px;line-height:25px;color:#666;font-size:14px;}
 .article-reply .article-db p{line-height:25px;color:#666;font-size:14px;text-indent:2em;}
 .article-reply-01 .article-db{padding-left:15px;}
 .article-reply-01 .article-db p{overflow:hidden;}
