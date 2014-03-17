@@ -318,7 +318,7 @@ a:hover{text-decoration:underline;}
 .article-reply .func-db .line-02{width:30px;right:0;left:auto;}
 .article-reply .func-db .point-line-02{background-position:-42px center;}
 .gray-bg-01 .article-reply .func-db .point-line-02{background-position:-14px center;}
-.article-reply .article-db-01{padding:10px 25px 10px 15px;}
+.article-reply .article-db-01{padding:10px 25px 10px 15px;font-size:14px;}
 .article-reply .article-db-01 p{height:75px;overflow:hidden;}
 .article-reply-02 .func-db-01{display:none;}
 
