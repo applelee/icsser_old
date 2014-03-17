@@ -1,0 +1,121 @@
+/**
+ * 非常道CSS框架
+ *
+ * @copyright	Copyright (c) 2012 - 2013 icsser Dev Team.
+ * @license		http://icsser.com/user_guide/license.html
+ * @link		http://icsser.com
+ * @since		Version 1.1.2
+ *
+ **/
+
+
+/* body */html,body{overflow-x:hidden;}
+
+/* 栅格容器（可选） */
+.warp-center{width:96%;margin:0 auto;}
+.warp-mg00{margin:0;}
+.warp-mg10{margin:0 1%;}
+.warp-mg20{margin:0 2%;}
+.warp-mg30{margin:0 3%;}
+/**/
+
+/* 通栏容器 */.warp-all{width:100%;margin-left:2%;clear:both;}/**/
+
+/* 栅格均分容器内边距（左） */
+.padding-left-05{padding-left:5%;width:100%}
+.padding-left-10{padding-left:1%;}
+.padding-left-15{padding-left:1.5%;}
+/**/
+
+
+/*——————————————%12栅格通用定义——————————————*/
+
+.column-box-01,.column-box-02,.column-box-03,.column-box-04,.column-box-05,.column-box-06,.column-box-07,.column-box-08,.column-box-09,.column-box-10,.column-box-11{float:left;_overflow:hidden;}
+.column-mr10-01,.column-mr10-02,.column-mr10-03,.column-mr10-04,.column-mr10-05,.column-mr10-06,.column-mr10-07,.column-mr10-08,.column-mr10-09,.column-mr10-10,.column-mr10-11,.column-lr10{float:left;margin-right:1%;_overflow:hidden;}
+.column-mr20-01,.column-mr20-02,.column-mr20-03,.column-mr20-04,.column-mr20-05,.column-mr20-06,.column-mr20-07,.column-mr20-08,.column-mr20-09,.column-mr20-10,.column-mr20-11,.column-lr20{float:left;margin-right:2%;_overflow:hidden;}
+.column-mr30-01,.column-mr30-02,.column-mr30-03,.column-mr30-04,.column-mr30-05,.column-mr30-06,.column-mr30-07,.column-mr30-08,.column-mr30-09,.column-mr30-10,.column-mr30-11,.column-lr30{float:left;margin-right:3%;_overflow:hidden;}
+
+/*——————————————%12栅格通用定义 结束——————————————*/
+
+
+/*——————————————%12栅格——————————————*/
+
+/* %12栅格（无间隔） */
+.column-box-01{width:8%;}
+.column-box-02{width:16%;}
+.column-box-03{width:24%;}
+.column-box-04{width:32%;}
+.column-box-05{width:40%;}
+.column-box-06{width:48%;}
+.column-box-07{width:56%;}
+.column-box-08{width:64%;}
+.column-box-09{width:72%;}
+.column-box-10{width:80%;}
+.column-box-11{width:88%;}
+/**/
+
+/* %12栅格（1%像素间隔） */
+.column-mr10-01{width:7%;}
+.column-mr10-02{width:15%;}
+.column-mr10-03{width:23%;}
+.column-mr10-04{width:31%;}
+.column-mr10-05{width:39%;}
+.column-mr10-06{width:47%;}
+.column-mr10-07{width:55%;}
+.column-mr10-08{width:63%;}
+.column-mr10-09{width:71%;}
+.column-mr10-10{width:79%;}
+.column-mr10-11{width:87%;}
+.column-lr10{width:47.5%;}/* 左右平分栅格 */
+/**/
+
+/* %12栅格（2%像素间隔） */
+.column-mr20-01{width:6%;}
+.column-mr20-02{width:14%;}
+.column-mr20-03{width:22%;}
+.column-mr20-04{width:30%;}
+.column-mr20-05{width:38%;}
+.column-mr20-06{width:46%;}
+.column-mr20-07{width:54%;}
+.column-mr20-08{width:62%;}
+.column-mr20-09{width:70%;}
+.column-mr20-10{width:78%;}
+.column-mr20-11{width:86%;}
+.column-lr20{width:47%;}/* 左右平分栅格 */
+/**/
+
+/* %12栅格（3%像素间隔） */
+.column-mr30-01{width:5%;}
+.column-mr30-02{width:13%;}
+.column-mr30-03{width:21%;}
+.column-mr30-04{width:29%;}
+.column-mr30-05{width:37%;}
+.column-mr30-06{width:45%;}
+.column-mr30-07{width:53%;}
+.column-mr30-08{width:61%;}
+.column-mr30-09{width:69%;}
+.column-mr30-10{width:77%;}
+.column-mr30-11{width:85%;}
+.column-lr30{width:46.5%;}/* 左右平分栅格 */
+/**/
+
+/*——————————————%12栅格 结束——————————————*/
+
+
+/*——————————————最小极限宽度——————————————*/
+
+@media (max-width:680px){
+
+.padding-left-05,.padding-left-10,.padding-left-15{padding:0;}
+
+.warp-all,.warp-center,.warp-mg00,.warp-mg10,.warp-mg20,.warp-mg30{margin:0;width:100%;}
+
+.column-box-01,.column-box-02,.column-box-03,.column-box-04,.column-box-05,.column-box-06,.column-box-07,.column-box-08,.column-box-09,.column-box-10,.column-box-11,.column-mr10-01,.column-mr10-02,.column-mr10-03,.column-mr10-04,.column-mr10-05,.column-mr10-06,.column-mr10-07,.column-mr10-08,.column-mr10-09,.column-mr10-10,.column-mr10-11,.column-lr10,.column-mr20-01,.column-mr20-02,.column-mr20-03,.column-mr20-04,.column-mr20-05,.column-mr20-06,.column-mr20-07,.column-mr20-08,.column-mr20-09,.column-mr20-10,.column-mr20-11,.column-lr20,.column-mr30-01,.column-mr30-02,.column-mr30-03,.column-mr30-04,.column-mr30-05,.column-mr30-06,.column-mr30-07,.column-mr30-08,.column-mr30-09,.column-mr30-10,.column-mr30-11,.column-lr30{float:none;width:100%;margin:0;}
+
+}
+
+/*——————————————最小极限宽度 结束——————————————*/
+
+
+/* 像素间隔栅格非结束列 加外边距+ */.column-unlast-mr10{margin-right:1%;}.column-unlast-mr20{margin-right:2%;}.column-unlast-mr30{margin-right:3%;}
+/* 清除外边距 */.column-last{margin:0;}

@@ -32,7 +32,7 @@ app.use(express.cookieParser());
 
 app.use(app.router);
 routes(app);
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '')));
 
 /*
 app.dynamicHelpers({
