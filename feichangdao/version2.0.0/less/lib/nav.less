@@ -1,22 +1,20 @@
 
 //nav-prototype-FCD
 .nav-prototype-FCD{
-	position:relative;height:42px;border-bottom:1px solid #fff;z-index:1000;.gray-lgtb-01;
+	position:relative;height:42px;z-index:1000;border-top:1px solid #f4f4f4;background:#ddd;
 
 	.nav-center{margin:0 auto;height:inherit;position:relative;}
 	.nav-db{height:inherit;}
-	a{display:block;line-height:42px;height:42px;padding:0 20px;border-left:1px solid #ccc;border-right:1px solid #fff;float:left;font-size:14px;}
-	a:hover{color:#666;text-decoration:none;}
-	a.current{cursor:text;cursor:default;color:#333;position:relative;font-weight:bold;.gray-lgtb-02;}
-	a.current:hover{color:#333;}
+	a{display:block;line-height:42px;height:42px;padding:0 20px;float:left;font-size:14px;.transition-bg;}
+	a:hover{color:#666;text-decoration:none;background:#f4f4f4;}
+	a.current{cursor:text;cursor:default;color:#333;position:relative;font-weight:bold;background:#f4f4f4;}
 	.fir{border-left:none;}
 	.las{border-right:none;}
-	.line-01{display:block;height:inherit;width:0;height:42px;border-left:1px solid #ccc;border-right:1px solid #fff;float:left;}
 	.nav-pop-db a{cursor:default;line-height:42px;position:relative;padding-right:32px;}
 	a i{display:block;position:absolute;margin-left:5px;border-width:0 6px 6px;border-color:transparent transparent #333;_border-color:#f9f9f9 #f9f9f9 #333;top:20px;right:15px;.transition-transform;}
 	a:hover i{border:6px solid #f9f9f9\0;border-bottom:none\0;border-top:6px solid #333\0;*border:6px solid #f9f9f9;*border-bottom:none;*border-top:6px solid #333;.rotate-180deg;}
 	a.current i{_border-color:#333 #eee #eee;}
-	.pop-down{padding:0;height:0;width:100px;background:#fff;overflow:hidden;position:absolute;left:0;top:42px;box-shadow:0 2px 2px #ddd;border-radius:0 0 3px 3px;overflow:hidden;}
+	.pop-down{padding:0;height:0;width:100px;background:#fff;overflow:hidden;position:absolute;left:0;top:42px;box-shadow:0 2px 2px #ddd;overflow:hidden;}
 	.pop-down li{border-bottom:1px solid #fff;}
 	.pop-down a{padding:0;display:block;height:30px;line-height:30px;border:none;padding:0 15px;float:none;white-space:nowrap;cursor:pointer;}
 	.pop-down a:hover,.pop-down a.current{background:#eee;}
