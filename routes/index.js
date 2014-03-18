@@ -112,7 +112,7 @@ module.exports = function(app){
 	
 	//非常道
 	app.get('/feichangdao/layout-12-frame.html', function (req, res) {
-		res.render('404/fcd-404.html');
+		res.render('404/fcd-404');
 	});
 	
 }
