@@ -93,7 +93,7 @@ module.exports = function(app){
 			if (err) {
 				return res.redirect('/');
 			}
-			res.render('views/admin/updata-article', {
+			res.render('admin/updata-article', {
 				article: doc,
 				title: '非常道 - '+ doc[0].article.title
 			});
@@ -112,7 +112,7 @@ module.exports = function(app){
 	
 	//非常道
 	app.get('/feichangdao/layout-12-frame.html', function (req, res) {
-		res.render('http://www.icsser.com/feichangdao/version2.0.0/index.html');
+		res.render('404/fcd-404.html');
 	});
 	
 }
