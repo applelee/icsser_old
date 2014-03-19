@@ -19,6 +19,14 @@ $(function () {
 		$(".main-am .lef-nav,.main-am .content").height($(".main-am").height());
 	})
 	
+	//标签文本显示
+	var $pre = $('pre');
+	
+	$('span.code',$pre).each(function(i,e) {
+        var text = $(this).html();
+		$(this).text(text);
+    });
+	
 	//点击弹出注册窗口
 	if($('#reg_btn') != null){
 		$('#reg_btn').bind('click',function(){
