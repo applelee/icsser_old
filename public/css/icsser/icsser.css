@@ -261,6 +261,7 @@ a:hover{text-decoration:underline;}
 .article-cont div{ont-size:16px;color:#333;text-indent:2em;padding:15px 0;line-height:30px;}
 .article-detail pre.css{padding:20px;background:#eee;font-size:14px;color:#000099;}
 .article-detail pre.css span{font-size:14px;color:#990099;}
+.article-detail pre.css b.note{color:#ccc;}
 
 
 /* 文章和回复 */
