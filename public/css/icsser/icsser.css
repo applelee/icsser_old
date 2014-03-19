@@ -262,7 +262,7 @@ a:hover{text-decoration:underline;}
 .article-detail pre.css{padding:20px;background:#eee;font-size:14px;color:#000099;}
 .article-detail pre.css span{font-size:14px;color:#990099;}
 .article-detail pre.css b.note{color:#bbb;font-weight:normal;}
-.article-detail code{padding:20px;background:#eee;font-size:14px;color:#000099;}
+.article-detail code{padding:20px;background:#eee;font-size:14px;color:#000099;display:block;}
 
 
 /* 文章和回复 */
