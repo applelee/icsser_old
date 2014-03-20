@@ -205,7 +205,7 @@ a:hover{text-decoration:underline;}
 /*.main-slide li span.logo-img{display:block;width:156px;height:205px;position:absolute;left:50%;top:50%;margin:-150px 0 0 -570px;background:url(../../images/feichangdao-logo.png);}*/
 .main-slide h1{font-size:30px;width:225px;color:#004fb1;float:left;text-align:right;padding:15px 0 0 75px;background:url(../../images/feichangdao-logo-01.png) left top no-repeat;margin-top:15px;}
 .main-slide h2{font-size:30px;width:225px;color:#004fb1;padding:15px 0 0;margin-top:15px;}
-.main-slide h1 font{font-weight:normal;font-size:14px;}
+.main-slide h1 font{font-weight:normal;font-size:16px;}
 .main-slide .txt-db-01{width:600px;float:right;margin-top:32px;}
 .main-slide .txt-db-01 p{font-size:16px;color:#004fb1;line-height:30px;margin-bottom:15px;}
 .main-slide .txt-db-01 font{font-size:18px;}
