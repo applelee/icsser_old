@@ -1,28 +1,25 @@
-pageCreate(function(){
+$(function(){
 	
 	var win_w = $(document).width();
 	
 	//幻灯片图片尺寸比例
 	if($('#slide').length == 1){
 		var $slide = $('#slide'),
-			index = 0,
-			slide = setInterval(slideAnimate,6000);
+			index = 0;
 		
 		$slide.find('li').width(win_w);
 		
 		//滑动鼠标效果
 		$('.slide-view',$slide).height(win_w*2/3);
 		$('.pic-list',$slide).bind('swipeleft',function(){
-			if($ul.position().left >= (2 - $ul.find('li').length)*win_w){
+			if($(this).position().left >= (2 - $(this).find('li').length)*win_w){
 				index ++;
 				swipeAnimate(-win_w,$(this),$('.fucos-ico',$slide).find('em'));
 			}
 			clearInterval(slide);
 			slide = setInterval(slideAnimate,6000);
 		}).bind('swiperight',function(){
-			var $ul = $(this).find('.pic-list');
-			
-			if($ul.position().left < 0){
+			if($(this).position().left < 0){
 				index --;
 				swipeAnimate(win_w,$(this),$('.fucos-ico',$slide).find('em'));
 			}
@@ -50,6 +47,8 @@ pageCreate(function(){
 				swipeAnimate(-$ul.position().left,$ul,$('.fucos-ico',$slide).find('em'));
 			}
 		}
+		
+		var slide = setInterval(slideAnimate,6000);
 		
 		//幻灯列表宽度
 		$('.pic-list',$slide).width(function(){
