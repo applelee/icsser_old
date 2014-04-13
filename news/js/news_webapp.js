@@ -1,4 +1,4 @@
-$(function($){
+pageCreate(function(){
 	
 	var win_w = $(document).width();
 	
@@ -11,12 +11,11 @@ $(function($){
 		$slide.find('li').width(win_w);
 		
 		//滑动鼠标效果
-		$('.slide-view',$slide).height(win_w*2/3).bind('swipeleft',function(){
-			var $ul = $(this).find('.pic-list');
-			
+		$('.slide-view',$slide).height(win_w*2/3);
+		$('.pic-list',$slide).bind('swipeleft',function(){
 			if($ul.position().left >= (2 - $ul.find('li').length)*win_w){
 				index ++;
-				swipeAnimate(-win_w,$ul,$('.fucos-ico',$slide).find('em'));
+				swipeAnimate(-win_w,$(this),$('.fucos-ico',$slide).find('em'));
 			}
 			clearInterval(slide);
 			slide = setInterval(slideAnimate,6000);
@@ -25,7 +24,7 @@ $(function($){
 			
 			if($ul.position().left < 0){
 				index --;
-				swipeAnimate(win_w,$ul,$('.fucos-ico',$slide).find('em'));
+				swipeAnimate(win_w,$(this),$('.fucos-ico',$slide).find('em'));
 			}
 			clearInterval(slide);
 			slide = setInterval(slideAnimate,6000);
