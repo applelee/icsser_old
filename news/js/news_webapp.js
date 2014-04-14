@@ -5,6 +5,7 @@ $(function(){
 	//幻灯片图片尺寸比例
 	if($('#slide').length == 1){
 		var $slide = $('#slide'),
+			slideStatus = 0,
 			index = 0;
 		
 		$slide.find('li').width(win_w);
@@ -12,16 +13,20 @@ $(function(){
 		//滑动鼠标效果
 		$('.slide-view',$slide).height(win_w*2/3);
 		$('.pic-list',$slide).bind('swipeleft',function(){
-			if($(this).position().left >= (2 - $(this).find('li').length)*win_w){
+			if($(this).position().left >= (2 - $(this).find('li').length)*win_w && !slideStatus){
 				index ++;
+				slideStatus = 1;
 				swipeAnimate(-win_w,$(this),$('.fucos-ico',$slide).find('em'));
+				$('.relat-box h1 a').text('left');
 			}
 			clearInterval(slide);
 			slide = setInterval(slideAnimate,6000);
 		}).bind('swiperight',function(){
-			if($(this).position().left < 0){
+			if($(this).position().left < 0 && !slideStatus){
 				index --;
+				slideStatus = 1;
 				swipeAnimate(win_w,$(this),$('.fucos-ico',$slide).find('em'));
+				$('.relat-box h1 a').text('right');
 			}
 			clearInterval(slide);
 			slide = setInterval(slideAnimate,6000);
@@ -32,7 +37,7 @@ $(function(){
 			tag.removeAttr('class').eq(index).addClass('current');
 			$ul.animate({
 				left:$ul.position().left + w
-			});
+			},function(){slideStatus = 0;});
 		}
 		
 		//幻灯动画
