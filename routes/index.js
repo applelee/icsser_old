@@ -3,12 +3,42 @@ var Article = require('../models/article.js');
 
 module.exports = function(app){
 	app.get('/', function (req, res) {
-		Article.get(null,function(err,doc){
+		/*Article.get(null,function(err,doc){
 			res.render('home/index', {
 				length: 3,
 				article: doc,
 				title: '我是前端 - 首页'
 			});
+		});*/
+		
+		var doc = [
+			{
+				_id:'d098sdf7asdf09',
+				article:{
+					title:'我是前端',
+					intr:'我是前端我自豪,我是前端我自豪,我是前端我自豪我是前端我自豪，我是前端我自豪，我是前端我自豪，我是前端我自豪我是前端我自豪',
+				},
+			},
+			{
+				_id:'d098sdf7asdf09',
+				article:{
+					title:'我是前端',
+					intr:'我是前端我自豪',
+				},
+			},
+			{
+				_id:'d098sdf7asdf09',
+				article:{
+					title:'我是前端',
+					intr:'我是前端我自豪',
+				},
+			},
+		];
+		
+		res.render('home/index', {
+			length: doc.length,
+			article: doc,
+			title: '我是前端 - 首页'
 		});
 	});
 	
